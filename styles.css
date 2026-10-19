@@ -369,13 +369,12 @@ h2 em {
 .hero-visual {
   position: relative;
   justify-self: end;
-  width: min(100%, 380px);
+  width: min(100%, 260px);
   min-width: 0;
 }
 
 .photo-frame {
   position: relative;
-  aspect-ratio: 1;
   padding: 12px;
   background: var(--portrait-frame);
   border-radius: 50%;
@@ -388,10 +387,17 @@ h2 em {
   content: "";
   position: absolute;
   inset: 12px;
-  z-index: 1;
+  z-index: 2;
   border: 1px solid var(--portrait-line);
   border-radius: inherit;
   pointer-events: none;
+}
+
+.photo-window {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: inherit;
 }
 
 .photo-frame img {
@@ -402,7 +408,9 @@ h2 em {
 }
 
 .photo-frame img.headshot {
-  object-position: 52% center;
+  /* A smaller circular frame keeps the subject close to the previous scale. */
+  display: block;
+  object-position: center;
 }
 
 .photo-note {
@@ -1463,7 +1471,7 @@ html:has(.project-dialog[open]) {
   }
 
   h1 { font-size: clamp(3rem, 9vw, 5rem); }
-  .hero-visual { justify-self: center; width: min(72vw, 360px); }
+  .hero-visual { justify-self: center; width: min(72vw, 260px); }
 
   .section-heading,
   .timeline-item {
@@ -1487,7 +1495,7 @@ html:has(.project-dialog[open]) {
   .section-index { font-size: clamp(2rem, 10vw, 2.6rem); }
 
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
-  .hero-visual { width: min(78vw, 320px); }
+  .hero-visual { width: min(78vw, 260px); }
   .skill-groups { grid-template-columns: 1fr; gap: 24px; }
   .timeline-body { padding-right: 0; }
   .role-number { display: none; }
