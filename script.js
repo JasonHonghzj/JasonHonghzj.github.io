@@ -8,6 +8,13 @@ const themeToggle = document.querySelector(".theme-toggle");
 const themeColor = document.querySelector('meta[name="theme-color"]');
 const projectTriggers = document.querySelectorAll("[data-project-dialog]");
 const projectDialogs = document.querySelectorAll(".project-dialog");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+let hasThemeOverride = false;
+try {
+  hasThemeOverride = ["light", "dark"].includes(localStorage.getItem("portfolio-theme"));
+} catch {
+  // System appearance remains available without browser storage.
+}
 
 const closeMenu = () => {
   menuToggle?.setAttribute("aria-expanded", "false");
@@ -65,17 +72,24 @@ sections.forEach((section) => sectionObserver.observe(section));
 const updateThemeControl = () => {
   const isDark = document.documentElement.dataset.theme === "dark";
   themeToggle?.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
-  themeColor?.setAttribute("content", isDark ? "#171d2a" : "#f5d8d1");
+  themeColor?.setAttribute("content", isDark ? "#161c18" : "#f6f2e9");
 };
 
 themeToggle?.addEventListener("click", () => {
   const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = nextTheme;
+  hasThemeOverride = true;
   try {
     localStorage.setItem("portfolio-theme", nextTheme);
   } catch {
     // The theme still applies for this visit when storage is unavailable.
   }
+  updateThemeControl();
+});
+
+systemTheme.addEventListener("change", (event) => {
+  if (hasThemeOverride) return;
+  document.documentElement.dataset.theme = event.matches ? "dark" : "light";
   updateThemeControl();
 });
 
@@ -86,6 +100,7 @@ projectTriggers.forEach((trigger) => {
     const dialog = document.getElementById(trigger.dataset.projectDialog);
     if (!(dialog instanceof HTMLDialogElement)) return;
     dialog.showModal();
+    dialog.querySelector(".project-dialog__shell").scrollTop = 0;
     dialog.querySelector("[data-close-dialog]")?.focus();
   });
 });

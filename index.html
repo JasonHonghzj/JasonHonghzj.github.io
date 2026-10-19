@@ -7,7 +7,7 @@
       name="description"
       content="Portfolio of Zhi-Jun (Jason) Hong, a data scientist working across machine learning, data engineering, and analytical storytelling."
     />
-    <meta name="theme-color" content="#f5d8d1" />
+    <meta name="theme-color" content="#f6f2e9" />
     <title>Jason Hong — Data Scientist</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <script>
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -66,7 +66,7 @@
       <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span class="status-dot"></span> Boston-based · Open to opportunities</p>
-          <h1 id="hero-title">Zhi-Jun <em>(Jason)</em> Hong</h1>
+          <h1 id="hero-title">Zhi-Jun <span>(Jason)</span> Hong</h1>
           <p class="hero-intro">
             I am a Master’s student in <strong>Data Science</strong> at <strong>Boston University</strong>, specializing in
             <strong>Machine Learning, Statistical Analysis, and AI</strong>. With a background in
@@ -96,42 +96,63 @@
 
       <section class="section about" id="about" aria-labelledby="about-title">
         <div class="section-heading reveal">
-          <p class="section-index" id="about-title">About Me</p>
+          <h2 class="section-index" id="about-title">About Me</h2>
         </div>
         <div class="about-content reveal" data-delay="100">
-          <p class="lead">
-            I connect statistical thinking with practical engineering to turn messy, high-volume data into systems people can trust.
-          </p>
-          <div class="about-columns">
+          <div class="about-text">
             <p>
-              Now pursuing an M.S. in Data Science at Boston University, I work across the full data lifecycle — from Kafka streams and Spark pipelines to predictive models and visual communication.
+              I'm a master's student in Data Science at Boston University, with a background in Statistics and FinTech from National Cheng Kung University. My interests center on data analysis, AI and machine learning, probability and statistics, and financial portfolio optimization. Coursework in Deep Learning for Data Science, Multivariate Analysis, Regression Analysis, Analysis of Time Series, and Introduction to Mathematical Finance has shaped how I approach these problems.
             </p>
             <p>
-              My foundation in Statistics and FinTech helps me stay equally attentive to model performance, business context, and the people behind every data point.
+              I enjoy working through a problem from preparing messy data and testing models to explaining what the results mean. My projects range from Kafka and Spark data pipelines and healthcare risk prediction to LSTM forecasting and Black–Litterman portfolio optimization. Throughout that process, I pay attention to data quality, model performance, and the business context behind each decision, aiming to turn complex findings into clear, practical recommendations.
             </p>
           </div>
-          <ul class="skill-list" aria-label="Technical skills">
-            <li>Python</li><li>SQL</li><li>R</li><li>PyTorch</li><li>Scikit-learn</li>
-            <li>Apache Spark</li><li>Kafka</li><li>MySQL</li><li>Tableau</li><li>Docker</li>
-          </ul>
+          <section class="about-skills" aria-labelledby="skills-title">
+            <h3 id="skills-title">My Skills</h3>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <h4>Data Analysis &amp; Statistics</h4>
+                <ul class="skill-list">
+                  <li>Probability &amp; Statistics</li><li>Exploratory Data Analysis</li><li>Regression</li><li>Time Series</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>AI &amp; Machine Learning</h4>
+                <ul class="skill-list">
+                  <li>Machine Learning</li><li>Deep Learning</li><li>PyTorch</li><li>scikit-learn</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Quantitative Finance</h4>
+                <ul class="skill-list">
+                  <li>Portfolio Optimization</li><li>Black–Litterman</li><li>LSTM Forecasting</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h4>Programming &amp; Data Tools</h4>
+                <ul class="skill-list">
+                  <li>Python</li><li>R</li><li>SQL</li><li>Apache Spark</li><li>Kafka</li><li>MySQL</li><li>Tableau</li><li>Docker</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
 
       <section class="section experience" id="experience" aria-labelledby="experience-title">
         <div class="section-heading reveal">
-          <p class="section-index" id="experience-title">Experience</p>
+          <h2 class="section-index" id="experience-title">Experience</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item reveal">
             <div class="timeline-meta">
-              <p>Jun 2024 — Oct 2024</p>
+              <h3>Market Research Intern</h3>
+              <p class="company">Eastern Online Co., Ltd.</p>
+              <p class="role-date">Jun 2024 — Oct 2024</p>
               <span>Taipei, Taiwan</span>
             </div>
             <div class="timeline-body">
-              <p class="role-number">01</p>
-              <h3>Market Research Intern</h3>
-              <p class="company">Eastern Online Co., Ltd.</p>
               <ul>
                 <li>Cleaned and validated 1,000+ machine-generated records to improve downstream data quality.</li>
                 <li>Helped streamline model-assisted data workflows, reducing processing time by 25%.</li>
@@ -142,13 +163,12 @@
 
           <article class="timeline-item reveal">
             <div class="timeline-meta">
-              <p>Sep 2022 — Jul 2023</p>
+              <h3>Research Assistant</h3>
+              <p class="company">National Cheng Kung University</p>
+              <p class="role-date">Sep 2022 — Jul 2023</p>
               <span>Tainan, Taiwan</span>
             </div>
             <div class="timeline-body">
-              <p class="role-number">02</p>
-              <h3>Research Assistant</h3>
-              <p class="company">National Cheng Kung University</p>
               <ul>
                 <li>Organized research data and documentation to support accurate, complete submissions.</li>
                 <li>Built R visualizations and structured analytical outputs in LaTeX for clearer communication.</li>
@@ -160,7 +180,7 @@
 
       <section class="section projects" id="projects" aria-labelledby="projects-title">
         <div class="projects-heading reveal">
-          <p class="section-index" id="projects-title">Projects</p>
+          <h2 class="section-index" id="projects-title">Projects</h2>
         </div>
 
         <div class="project-grid">
@@ -222,7 +242,7 @@
 
       <section class="section education" id="education" aria-labelledby="education-title">
         <div class="section-heading reveal">
-          <p class="section-index" id="education-title">Education</p>
+          <h2 class="section-index" id="education-title">Education</h2>
         </div>
         <div class="education-list">
           <article class="education-item reveal">
@@ -249,7 +269,7 @@
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="section-index" id="contact-title">Contact</p>
+        <h2 class="section-index" id="contact-title">Contact</h2>
         <p class="contact-invitation">Let’s connect</p>
         <p>Find me online or send a note — I’m always open to thoughtful conversations and new opportunities.</p>
         <div class="contact-grid">
@@ -287,16 +307,18 @@
             <h2 id="project-epidemic-title">Epidemic Analytics Engine</h2>
             <p class="project-detail__intro">A streaming-to-analytics system designed to convert fast-moving public-health signals into structured, decision-ready insight.</p>
             <div class="project-detail__meta">
-              <div><span>Project type</span><strong>Academic data engineering project</strong></div>
+              <div><span>Timeline</span><strong class="project-term">To be confirmed</strong></div>
               <div><span>Skills</span><strong>Apache Spark, Kafka, MySQL, Python, Machine Learning</strong></div>
             </div>
           </header>
           <div class="project-detail__visual project-card--lavender" aria-hidden="true">
             <div class="pipeline-diagram"><span>Kafka</span><i>→</i><span>Spark</span><i>→</i><span>MySQL</span><i>→</i><span>Insights</span></div>
           </div>
-          <section class="project-detail__panel"><h3>Overview / Description</h3><p>Four typed Kafka streams feed Spark batch pipelines that clean, join, and aggregate epidemic data before storing analytical outputs in MySQL.</p></section>
-          <section class="project-detail__panel"><h3>Objective / Success Metrics</h3><p>Create a dependable end-to-end workflow that can surface geographic anomalies and support outbreak prediction from multiple live-style data sources.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Designed schemas for four event streams and validated incoming records.</li><li>Built Spark transformations for cleaning, aggregation, and feature preparation.</li><li>Stored structured results in MySQL and layered anomaly detection and predictive modeling on top.</li></ul></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>An academic data engineering project connecting four typed Kafka event streams to Spark batch pipelines and MySQL. The workflow organizes epidemiological data for downstream analysis of severity, hospital capacity, vaccination coverage, and epidemic patterns.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Build a structured analytical foundation for combining epidemic signals and designing anomaly detection and outbreak prediction workflows.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Engineered Spark batch pipelines to process four typed Kafka event streams.</li><li>Aggregated epidemiological data and stored structured analytical results in MySQL.</li><li>Designed an ML pipeline for anomaly detection and outbreak prediction across public-health indicators.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>Delivered a Kafka–Spark–MySQL workflow that transforms four event streams into structured data for downstream analytics, alongside an ML pipeline design for identifying unusual patterns and forecasting outbreaks.</p></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project connects data engineering with predictive analysis: organizing event data is a necessary step toward interpreting changes in epidemic conditions. The work demonstrates the pipeline architecture; predictive accuracy and real-world operational impact remain to be evaluated.</p></section>
         </div>
       </div>
     </dialog>
@@ -310,14 +332,16 @@
             <h2 id="project-medical-title">Medical Case Analytics</h2>
             <p class="project-detail__intro">A text-processing workflow that turns unstructured Massachusetts court filings into traceable medical-debt insights.</p>
             <div class="project-detail__meta">
-              <div><span>Project type</span><strong>Applied legal analytics project</strong></div>
+              <div><span>Timeline</span><strong class="project-term">To be confirmed</strong></div>
               <div><span>Skills</span><strong>Python, Regex, Fuzzy Matching, EDA, Data Visualization</strong></div>
             </div>
           </header>
           <div class="project-detail__visual project-card--peach" aria-hidden="true"><div class="case-diagram"><strong>10 years</strong><span>court filings</span><i>→</i><strong>structured cases</strong></div></div>
-          <section class="project-detail__panel"><h3>Overview / Description</h3><p>The project extracts medical case signals from a decade of court filings, standardizes noisy creditor names, and organizes cases into analysis-ready categories.</p></section>
-          <section class="project-detail__panel"><h3>Objective / Success Metrics</h3><p>Reduce manual review, improve matching consistency, and reveal which creditors and case types drive the largest share of activity.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Created regex rules to detect medical and debt-related language.</li><li>Applied fuzzy matching to consolidate spelling variations and duplicated entities.</li><li>Used exploratory analysis to identify concentrated creditor behavior and long-term patterns.</li></ul></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A collaborative legal-data project exploring medical case categories in Massachusetts court filings. My contribution combined keyword identification, support for a regex and fuzzy-matching pipeline, and exploratory analysis of filing patterns across 2015–2025.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Turn unstructured court records into analyzable medical case categories, then identify changes over time and concentrations in creditor activity.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Identified relevant keywords to support classification of medical cases.</li><li>Contributed to a regex and fuzzy-matching workflow for unstructured court records.</li><li>Compared filing trends across medical categories and examined each creditor’s share of cases.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Ambulance-related cases declined by 96% over 2015–2025, while other medical categories remained stable.</li><li>Trinity EMS accounted for 60% of ambulance cases.</li><li>MSPCA Angell represented 91% of veterinary filings.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The analysis made category-specific trends and creditor concentration visible within a large collection of court records. These descriptive findings provide a clearer starting point for further investigation; filing patterns alone do not establish their causes.</p></section>
         </div>
       </div>
     </dialog>
@@ -331,14 +355,16 @@
             <h2 id="project-stroke-title">Stroke Risk Prediction</h2>
             <p class="project-detail__intro">A comparative modeling study that combines supervised prediction and patient segmentation to identify meaningful stroke-risk profiles.</p>
             <div class="project-detail__meta">
-              <div><span>Project type</span><strong>Healthcare machine learning project</strong></div>
-              <div><span>Skills</span><strong>XGBoost, MLP, PCA, GMM, Model Evaluation</strong></div>
+              <div><span>Timeline</span><strong class="project-term">To be confirmed</strong></div>
+              <div><span>Skills</span><strong>Classification, XGBoost, MLP, K-Means, PCA, GMM, Model Evaluation</strong></div>
             </div>
           </header>
           <div class="project-detail__visual project-card--sage" aria-hidden="true"><div class="risk-diagram"><strong>14,000+</strong><span>patient records</span><i>0.885 AUC</i></div></div>
-          <section class="project-detail__panel"><h3>Overview / Description</h3><p>Five classification models were evaluated on more than 14,000 patient records, with clustering and PCA used to investigate patterns beyond a single prediction score.</p></section>
-          <section class="project-detail__panel"><h3>Objective / Success Metrics</h3><p>Balance predictive performance with interpretable patient segments, using AUC and comparative model evaluation to select the strongest approach.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Prepared health and demographic features for consistent model comparison.</li><li>Trained five classifiers, including XGBoost and a multilayer perceptron.</li><li>Combined PCA and Gaussian mixture modeling to reveal three distinct risk profiles.</li></ul></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A healthcare modeling study using 14,000+ patient records and 19 health variables. The project combines supervised stroke-risk prediction with unsupervised analysis to explore distinct patient risk profiles.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Compare classifiers using AUC, accuracy, and F1-score, while using dimensionality reduction and clustering to understand differences among patient groups.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Analyzed patient records across 19 health variables.</li><li>Evaluated Logistic Regression, Random Forest, XGBoost, KNN, and MLP classifiers.</li><li>Applied K-Means, Gaussian mixture modeling, and PCA to investigate patient segments.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Reported predictive performance of 0.885 AUC, 80.3% accuracy, and 0.836 F1-score.</li><li>Identified three distinct patient risk profiles through clustering and dimensionality reduction.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The study brings together predictive evaluation and patient segmentation, illustrating how both can contribute to understanding health data. These are project-level results; clinical use would require external validation and a separate assessment of deployment suitability.</p></section>
         </div>
       </div>
     </dialog>
@@ -352,14 +378,16 @@
             <h2 id="project-portfolio-title">Portfolio Optimization</h2>
             <p class="project-detail__intro">A forecasting and asset-allocation workflow that connects LSTM return estimates with Black–Litterman portfolio construction.</p>
             <div class="project-detail__meta">
-              <div><span>Project type</span><strong>Quantitative finance project</strong></div>
+              <div><span>Timeline</span><strong class="project-term">To be confirmed</strong></div>
               <div><span>Skills</span><strong>R, LSTM, Black–Litterman, Portfolio Analytics</strong></div>
             </div>
           </header>
           <div class="project-detail__visual project-card--ink" aria-hidden="true"><div class="portfolio-diagram"><span>100 ETFs</span><i>→</i><strong>Top 20</strong><small>by Sharpe ratio</small></div></div>
-          <section class="project-detail__panel"><h3>Overview / Description</h3><p>The project forecasts asset behavior with an LSTM model, then uses those views within a Black–Litterman framework to build a diversified portfolio.</p></section>
-          <section class="project-detail__panel"><h3>Objective / Success Metrics</h3><p>Improve risk-adjusted performance against a broad benchmark set; the resulting strategy outperformed 70% of 100 benchmark ETFs.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Screened 100 ETFs and prepared historical return features.</li><li>Generated forward-looking views with an LSTM forecasting model.</li><li>Combined model views with Black–Litterman optimization and ranked outcomes by Sharpe ratio.</li></ul></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A quantitative finance project combining LSTM stock-price forecasting with Black–Litterman portfolio optimization in R. Risk and performance were benchmarked against 30 leading stocks and 100 ETFs.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Connect model-based forecasts to portfolio allocation and evaluate the resulting strategy using risk-adjusted metrics, including the Sharpe ratio.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Developed an LSTM model for stock-price forecasting.</li><li>Implemented Black–Litterman portfolio optimization in R.</li><li>Compared risk and performance against 30 stocks and 100 ETFs using risk-adjusted metrics.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>In the project evaluation, the optimized portfolio outperformed 70% of the 100 benchmark ETFs and ranked among the top 20 by Sharpe ratio.</p></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project demonstrates a workflow from forecasting to allocation and comparative evaluation. Its value lies in assessing return alongside risk; the reported benchmark results describe the study and do not establish future performance.</p></section>
         </div>
       </div>
     </dialog>
