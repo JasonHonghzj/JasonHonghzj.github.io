@@ -1,0 +1,13 @@
+<svg width="132" height="88" viewBox="0 0 132 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(24 44)" fill="#A61F38">
+    <ellipse rx="12" ry="25" transform="rotate(0) translate(0 -16)"/>
+    <ellipse rx="12" ry="25" transform="rotate(72) translate(0 -16)"/>
+    <ellipse rx="12" ry="25" transform="rotate(144) translate(0 -16)"/>
+    <ellipse rx="12" ry="25" transform="rotate(216) translate(0 -16)"/>
+    <ellipse rx="12" ry="25" transform="rotate(288) translate(0 -16)"/>
+    <circle r="14" fill="#F7F3EC"/>
+    <circle r="10" stroke="#A61F38" stroke-width="2" fill="none"/>
+  </g>
+  <text x="58" y="43" fill="#A61F38" font-family="Arial, sans-serif" font-size="24" font-weight="700">NCKU</text>
+  <text x="59" y="59" fill="#6F6A64" font-family="Arial, sans-serif" font-size="8" font-weight="700" letter-spacing="1.2">EST. 1931</text>
+</svg>
