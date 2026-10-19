@@ -348,15 +348,16 @@ h2 em {
 .hero-visual {
   position: relative;
   justify-self: end;
-  width: min(68%, 380px);
+  width: min(100%, 380px);
+  min-width: 0;
 }
 
 .photo-frame {
   position: relative;
-  aspect-ratio: 0.79;
-  padding: 14px;
+  aspect-ratio: 1;
+  padding: 12px;
   background: #ead8ce;
-  border-radius: 48% 48% 22px 22px;
+  border-radius: 50%;
   box-shadow: 0 25px 80px rgba(87, 57, 50, 0.16);
   overflow: hidden;
 }
@@ -1404,7 +1405,7 @@ html:has(.project-dialog[open]) {
   }
 
   h1 { font-size: clamp(4rem, 14vw, 6.3rem); }
-  .hero-visual { justify-self: center; width: min(64%, 360px); }
+  .hero-visual { justify-self: center; width: min(72vw, 360px); }
 
   .section-heading,
   .timeline-item {
@@ -1428,9 +1429,7 @@ html:has(.project-dialog[open]) {
   .section-index { font-size: clamp(2rem, 10vw, 2.6rem); }
 
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
-  .hero-visual { width: 68%; }
-  .floating-card--top { left: -5%; }
-  .floating-card--bottom { right: -3%; min-width: 170px; }
+  .hero-visual { width: min(78vw, 320px); }
   .about-columns { grid-template-columns: 1fr; gap: 10px; }
   .timeline-body { padding-right: 0; }
   .role-number { display: none; }
