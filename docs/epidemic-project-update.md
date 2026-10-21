@@ -1,10 +1,12 @@
-# Epidemic Analytics Engine — content refresh
+# Epidemic Engine — Spark Analytics & ML Pipeline
 
 Date: October 21, 2026.
 
 ## Scope and source
 
-The owner supplied a three-project analysis. This update uses only its Epidemic Engine section and the relevant limitations in the concluding evidence notes. Other projects and the About section are unchanged. The local source checkout named in the attachment was inspected read-only; no pipeline was rerun and no cloud service was contacted.
+The owner supplied a three-project analysis and then a dedicated Epidemic Engine brief. The latest revision follows that dedicated brief, including its four English contribution bullets and seven capability categories. The local source checkout named in the original attachment was previously inspected read-only; no pipeline was rerun and no cloud service was contacted.
+
+The project card now uses the name “Epidemic Engine,” with “Spark Analytics & ML Pipeline” as the detail-page eyebrow. The case study focuses on batch processing, SQL data modeling, feature engineering, applied ML, model evaluation, and workload automation. The four-stage visual gives MySQL storage its own step between Spark and ML, with team context and personal contributions labeled in HTML.
 
 Local source project: `epidemic-engine-12-panda-yu-li-hong-dahlberg`.
 
@@ -33,10 +35,10 @@ Local source project: `epidemic-engine-12-panda-yu-li-hong-dahlberg`.
 
 Built-in ImageGen generated two project-bound assets:
 
-- `assets/projects/epidemic-engine-cover-v2.png` — photorealistic pipeline-and-analytics workstation cover. [Exact prompt](epidemic-cover-generation.md).
-- `assets/projects/epidemic-engine-workflow-v2.png` — text-free three-stage architecture artwork. [Exact prompt](epidemic-workflow-generation.md).
+- `assets/projects/epidemic-engine-cover-v3.png` — photorealistic analytics workstation cover showing structured indicators and anomaly analysis. [Exact prompt](epidemic-cover-v3-generation.md).
+- `assets/projects/epidemic-engine-workflow-v3.png` — text-free four-stage architecture artwork. [Exact prompt](epidemic-workflow-v3-generation.md).
 
-Stage labels, personal/team attribution, the five-indicator count, and configured schedules are deterministic HTML text for accuracy and responsive accessibility. Existing Inter italic intro styling is preserved.
+Stage labels, personal/team attribution, the five-indicator count, and configured schedules are HTML text for accuracy and responsive accessibility. Existing Inter italic intro styling is preserved. Earlier v2 artwork and its prompt records remain as historical versions.
 
 The additional requested contact punctuation correction is `Let's Connect!` with the English ASCII exclamation mark.
 

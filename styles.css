@@ -1378,6 +1378,17 @@ html[data-theme="dark"] .project-flow__step:nth-child(3) { --flow-accent: #edb69
   border-radius: 14px;
 }
 
+.project-flow--epidemic .project-flow__steps { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.project-flow--epidemic .project-flow__step { padding: 18px 13px; }
+.project-flow--epidemic .project-flow__step:nth-child(4) { --flow-accent: #66517d; --flow-tint: #e9e2ef; }
+html[data-theme="dark"] .project-flow--epidemic .project-flow__step:nth-child(4) { --flow-accent: #cdbbe0; --flow-tint: #352e3e; }
+
+@media (max-width: 800px) {
+  .project-flow--epidemic .project-flow__steps { grid-template-columns: 1fr; gap: 26px; }
+  .project-flow--epidemic .project-flow__step { padding: 18px; }
+  .project-flow--epidemic .project-flow__step:not(:last-child)::after { content: "↓"; top: auto; bottom: -25px; right: calc(50% - 11px); }
+}
+
 .project-flow__ownership {
   margin: 0 0 10px;
   color: var(--flow-accent);
