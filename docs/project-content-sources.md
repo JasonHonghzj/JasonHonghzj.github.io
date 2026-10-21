@@ -8,8 +8,8 @@ This refresh reads source files and saved results; it does not rerun the underly
 
 - Seven projects total. Epidemic Analytics Engine and Medical Case Analytics retain their existing résumé-based content because no repository was supplied.
 - The five projects below are updated from their supplied repositories.
-- Five PNG covers were generated with the built-in ImageGen tool. They are conceptual illustrations, not screenshots, measured charts, or empirical results.
-- Images are reused on cards and in detail dialogs. The original generated files remain outside this repository; deployable copies are in assets/projects/.
+- Seven photorealistic covers now appear on the project cards. They are AI-generated concepts, not actual screenshots, measured charts, or empirical results.
+- Detail dialogs use separate responsive process diagrams with real text. Current cover prompts and the technical-tag rationale are recorded in [project-visual-refresh.md](project-visual-refresh.md). Original illustration assets and prompts are retained as historical references.
 
 ## Stroke Risk Prediction
 
@@ -88,7 +88,7 @@ The tool replaces manual schedule bookkeeping with reproducible generation and e
 - Butterfly 79.22% is validation accuracy at epoch 25; test labels are unavailable.
 - Mahjong outcomes are described as implemented capabilities and a saved sample, not new tests run during this update or a guarantee of optimality.
 
-## ImageGen prompt set
+## Historical ImageGen prompt set (superseded by the photorealistic refresh)
 
 Mode: built-in image_gen; no CLI or API-key fallback.
 

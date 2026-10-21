@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@1,400&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -221,22 +221,18 @@
         <div class="project-grid">
           <article class="project-card project-card--lavender reveal">
             <div class="project-topline"><span>Big Data Engineering</span></div>
-            <div class="project-graphic project-graphic--stream" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
+            <img class="project-cover" src="assets/projects/epidemic-realistic.png" alt="AI-generated concept: public-health data workstation with epidemic maps and event analytics." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Epidemic Analytics Engine</h3>
               <p>Spark batch pipelines process four typed Kafka streams into structured MySQL analytics, with anomaly detection and outbreak prediction layered on top.</p>
-              <ul><li>Spark</li><li>Kafka</li><li>MySQL</li><li>Machine Learning</li></ul>
+              <ul><li>Apache Kafka</li><li>Apache Spark</li><li>MySQL</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-epidemic">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
           <article class="project-card project-card--peach reveal" data-delay="80">
             <div class="project-topline"><span>Legal Data Analytics</span></div>
-            <div class="project-graphic project-graphic--cases" aria-hidden="true">
-              <strong>10</strong><span>years of<br />court filings</span><i>−96%</i>
-            </div>
+            <img class="project-cover" src="assets/projects/medical-realistic.png" alt="AI-generated concept: court-filing and medical-debt text analysis at a research workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Medical Case Analytics</h3>
               <p>A regex and fuzzy-matching pipeline transformed unstructured Massachusetts court filings into medical case categories and surfaced concentrated creditor behavior.</p>
@@ -247,55 +243,55 @@
 
           <article class="project-card project-card--sage reveal">
             <div class="project-topline"><span>Healthcare Machine Learning</span></div>
-            <img class="project-cover" src="assets/projects/stroke.png" alt="Conceptual brain and connected patient records in sage and terracotta." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/stroke-realistic.png" alt="AI-generated concept: symptom-data heatmap, patient clusters, and prediction evaluation on a health analytics monitor." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Stroke Risk Prediction</h3>
               <p>Explore 14,976 health records through symptom-based prediction and patient segmentation, with five classifiers and four interpreted risk groups.</p>
-              <ul><li>Classification</li><li>Clustering</li><li>EDA</li></ul>
+              <ul><li>scikit-learn</li><li>MLP Classification</li><li>K-Means</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-stroke">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
           <article class="project-card project-card--ink reveal">
             <div class="project-topline"><span>Quantitative Finance</span></div>
-            <img class="project-cover" src="assets/projects/portfolio.png" alt="Conceptual allocation ring and diversified assets in a warm editorial illustration." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/portfolio-realistic.png" alt="AI-generated concept: quantitative equity research with allocation weights and risk–return analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Portfolio Optimization</h3>
               <p>Compare forecasting models and six-stock allocations against 10 Taiwan ETF benchmarks, with transparent return, volatility, and Sharpe calculations.</p>
-              <ul><li>LSTM</li><li>Black–Litterman</li><li>R</li></ul>
+              <ul><li>LSTM</li><li>Mean–Variance</li><li>Black–Litterman</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-portfolio">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
           <article class="project-card project-card--lavender reveal">
             <div class="project-topline"><span>Deep Learning · Sequence Modeling</span></div>
-            <img class="project-cover" src="assets/projects/transformer.png" alt="Conceptual arithmetic tokens flowing through translucent attention layers." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/transformer-realistic.png" alt="AI-generated concept: arithmetic token sequences and an attention matrix on a deep-learning workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Transformer Arithmetic Reasoning</h3>
               <p>Train a compact causal Transformer from scratch to generate complete, step-by-step reductions of parenthesized addition expressions.</p>
-              <ul><li>PyTorch</li><li>Transformers</li><li>Sequence Modeling</li></ul>
+              <ul><li>PyTorch</li><li>Causal Attention</li><li>Curriculum Learning</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-transformer">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
           <article class="project-card project-card--sage reveal">
             <div class="project-topline"><span>Deep Learning · Computer Vision</span></div>
-            <img class="project-cover" src="assets/projects/butterfly.png" alt="Conceptual butterflies with image crops and layered visual features." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/butterfly-realistic.png" alt="AI-generated concept: detailed butterfly photographs and computer-vision feature analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Butterfly Species Classification</h3>
               <p>Build a custom PyTorch CNN for 10 butterfly categories, reaching 79.22% validation accuracy with a complete image-to-probability pipeline.</p>
-              <ul><li>Computer Vision</li><li>CNN</li><li>PyTorch</li></ul>
+              <ul><li>PyTorch</li><li>CNN</li><li>Data Augmentation</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-butterfly">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
           <article class="project-card project-card--peach reveal">
             <div class="project-topline"><span>Side Project · Scheduling</span></div>
-            <img class="project-cover" src="assets/projects/mahjong.png" alt="Conceptual four-player Mahjong table connected to tournament schedule cards." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/mahjong-realistic.png" alt="AI-generated concept: real Mahjong tiles beside a tournament scheduling interface." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Mahjong Tournament Scheduler</h3>
               <p>A desktop and command-line tool for balanced four-player schedules, with seeded generation, validation, pairing reports, and TXT / CSV / JSON export.</p>
-              <ul><li>Python</li><li>Tkinter</li><li>Algorithms</li></ul>
+              <ul><li>Python</li><li>Heuristic Search</li><li>Tkinter</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-mahjong">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
@@ -373,10 +369,28 @@
               <div><span>Skills</span><strong>Apache Spark, Kafka, MySQL, Python, Machine Learning</strong></div>
             </div>
           </header>
-          <div class="project-detail__visual project-card--lavender" aria-hidden="true">
-            <div class="pipeline-diagram"><span>Kafka</span><i>→</i><span>Spark</span><i>→</i><span>MySQL</span><i>→</i><span>Insights</span></div>
-          </div>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>An academic data engineering project connecting four typed Kafka event streams to Spark batch pipelines and MySQL. The workflow organizes epidemiological data for downstream analysis of severity, hospital capacity, vaccination coverage, and epidemic patterns.</p></section>
+          <figure class="project-flow" aria-labelledby="epidemic-flow-title">
+            <figcaption class="project-flow__heading" id="epidemic-flow-title"><span>Project at a glance</span>From public-health events to analytical insight</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12m-12 12h12m-12 12h12m12-24h12m-12 12h12m-12 12h12M18 12l12 12-12 12"/><circle cx="24" cy="24" r="4"/></svg></div>
+                <h3>Ingest signals</h3>
+                <ul><li>Four typed Kafka streams</li><li>Public-health event data</li><li>Severity &amp; capacity indicators</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="10" rx="15" ry="6"/><path d="M9 10v14c0 8 30 8 30 0V10M9 24v14c0 8 30 8 30 0V24"/></svg></div>
+                <h3>Structure the data</h3>
+                <ul><li>Spark batch processing</li><li>Aggregate epidemic signals</li><li>Store results in MySQL</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7v33h33M15 31l8-10 8 5 10-15M33 11h8v8"/><path d="M15 35v-4m8 4V21m8 14v-9" opacity=".4"/></svg></div>
+                <h3>Enable analytics</h3>
+                <ul><li>Anomaly detection design</li><li>Outbreak prediction design</li><li>Analysis-ready health data</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>Four event streams → one structured analytics workflow</strong><p>Pipeline architecture demonstrated; predictive performance remains to be evaluated.</p></div>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A data engineering project connecting four typed Kafka event streams to Spark batch pipelines and MySQL. The workflow organizes epidemiological data for downstream analysis of severity, hospital capacity, vaccination coverage, and epidemic patterns.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Build a structured analytical foundation for combining epidemic signals and designing anomaly detection and outbreak prediction workflows.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Engineered Spark batch pipelines to process four typed Kafka event streams.</li><li>Aggregated epidemiological data and stored structured analytical results in MySQL.</li><li>Designed an ML pipeline for anomaly detection and outbreak prediction across public-health indicators.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>Delivered a Kafka–Spark–MySQL workflow that transforms four event streams into structured data for downstream analytics, alongside an ML pipeline design for identifying unusual patterns and forecasting outbreaks.</p></section>
@@ -401,7 +415,27 @@
               <div><span>Skills</span><strong>Python, Regex, Fuzzy Matching, EDA, Data Visualization</strong></div>
             </div>
           </header>
-          <div class="project-detail__visual project-card--peach" aria-hidden="true"><div class="case-diagram"><strong>10 years</strong><span>court filings</span><i>→</i><strong>structured cases</strong></div></div>
+          <figure class="project-flow" aria-labelledby="medical-flow-title">
+            <figcaption class="project-flow__heading" id="medical-flow-title"><span>Project at a glance</span>From court filings to medical-debt patterns</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5h17l8 8v30H12zM29 5v9h8M18 22h13M18 28h13M18 34h8"/></svg></div>
+                <h3>Read court filings</h3>
+                <ul><li>Massachusetts records</li><li>2015–2025 filing period</li><li>Medical-case keywords</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h38L29 25v13l-10 5V25z"/><path d="M13 14h22" opacity=".45"/></svg></div>
+                <h3>Classify &amp; organize</h3>
+                <ul><li>Regex pattern extraction</li><li>Fuzzy entity matching</li><li>Medical case categories</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7v33h33M15 31l8-10 8 5 10-15M33 11h8v8"/><path d="M15 35v-4m8 4V21m8 14v-9" opacity=".4"/></svg></div>
+                <h3>Explain the patterns</h3>
+                <ul><li>Compare category trends</li><li>Identify creditor concentration</li><li>Communicate descriptive findings</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>96% decline in ambulance-related filings across 2015–2025</strong><p>Descriptive finding; filing patterns alone do not establish causes.</p></div>
+          </figure>
           <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A collaborative legal-data project exploring medical case categories in Massachusetts court filings. My contribution combined keyword identification, support for a regex and fuzzy-matching pipeline, and exploratory analysis of filing patterns across 2015–2025.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Turn unstructured court records into analyzable medical case categories, then identify changes over time and concentrations in creditor activity.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Identified relevant keywords to support classification of medical cases.</li><li>Contributed to a regex and fuzzy-matching workflow for unstructured court records.</li><li>Compared filing trends across medical categories and examined each creditor’s share of cases.</li></ul></section>
@@ -427,20 +461,32 @@
               <div><span>Skills</span><strong>Python, scikit-learn, XGBoost, K-Means, PCA, GMM</strong></div>
             </div>
           </header>
-          <figure class="project-detail__cover">
-            <img src="assets/projects/stroke.png" alt="Conceptual brain and connected patient records in sage and terracotta." width="1536" height="1024" loading="lazy" decoding="async" />
-            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          <figure class="project-flow" aria-labelledby="stroke-flow-title">
+            <figcaption class="project-flow__heading" id="stroke-flow-title"><span>Project at a glance</span>From symptom data to evaluated risk predictions</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M19 7V4h10v3M24 15v10m-5-5h10M15 34h6l3-5 4 9 3-4h3"/></svg></div>
+                <h3>Prepare health data</h3>
+                <ul><li>14,976 health records</li><li>15 symptom predictors</li><li>Engineered risk indices</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="10" height="10" rx="2"/><rect x="32" y="7" width="10" height="10" rx="2"/><rect x="19" y="31" width="10" height="10" rx="2"/><path d="M16 12h16M11 17l13 14 13-14M24 12v19"/></svg></div>
+                <h3>Model &amp; segment</h3>
+                <ul><li>Compare five classifiers</li><li>Profile four K-Means groups</li><li>Visualize groups with PCA</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M18 7V4h12v3M16 20l5 5 11-11M17 33h14"/></svg></div>
+                <h3>Evaluate predictions</h3>
+                <ul><li>80 / 20 train–test split</li><li>ROC AUC, accuracy &amp; F1</li><li>Compare model trade-offs</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>MLP classifier · 0.8854 ROC AUC · 80.14% accuracy</strong><p>Single held-out split; research results, not a clinically validated diagnostic tool.</p></div>
           </figure>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS701 course project analyzing a health dataset with 14,976 rows and 19 original columns, including risk measures and the target label. The notebook combines engineered risk indices, clustering, regression of stroke-risk percentage, and classification of at-risk status.</p></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A machine-learning project analyzing a health dataset with 14,976 rows and 19 original columns, including risk measures and the target label. The notebook combines engineered risk indices, clustering, regression of stroke-risk percentage, and classification of at-risk status.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Compare predictive models using held-out evaluation, identify patterns associated with the supplied risk measures, and make patient-group differences easier to interpret.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Explored symptom distributions and engineered age-normalized risk, chronic-condition, symptom-burden, and age-adjusted risk indices.</li><li>Standardized five features for K-Means, explored cluster counts using elbow and silhouette analysis, and compared clustering with Gaussian mixture models. The saved profiling run uses four clusters.</li><li>Visualized the clusters with two-component PCA, which retained 81.1% of variance in the standardized clustering features.</li><li>Compared five classifiers and five regressors using 15 symptom indicators and an 80/20 train–test split (random state 42). A separate Logistic Regression submission workflow used age, gender, and symptoms.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>MLP Classifier: ROC AUC 0.8854, accuracy 80.14%, and F1 0.8362 on the notebook’s held-out split.</li><li>Logistic Regression: ROC AUC 0.8853, accuracy 80.34%, and F1 0.8310. These are a separate model’s results, not a combined best-model score.</li><li>The four interpreted clusters had mean supplied risk percentages of 35.23%, 56.36%, 85.89%, and 94.59%.</li><li>The saved MLP regression result was RMSE 18.160 and R² 0.532; the final submission file contained 3,745 predictions.</li></ul></section>
-          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>This project demonstrates the complementary roles of interpretable exploration and predictive comparison. Cluster labels describe the supplied risk data rather than independently validated clinical categories. The recorded metrics come from a course dataset and a single held-out split; they do not establish clinical validity or real-world treatment utility.</p></section>
-          <details class="project-detail__sources">
-            <summary>Sources &amp; evaluation context</summary>
-            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
-            <ul><li><a href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge/blob/main/ds701_midterm25_notebook.ipynb" target="_blank" rel="noopener noreferrer">Notebook and recorded outputs ↗</a></li><li><a href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge/blob/main/README.md" target="_blank" rel="noopener noreferrer">Dataset and assignment context ↗</a></li></ul>
-          </details>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>This project demonstrates the complementary roles of interpretable exploration and predictive comparison. Cluster labels describe the supplied risk data rather than independently validated clinical categories. The recorded metrics come from a single dataset and held-out split; they do not establish clinical validity or real-world treatment utility.</p></section>
           <footer class="project-detail__actions">
             <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
@@ -462,20 +508,32 @@
               <div><span>Skills</span><strong>R, Python, LSTM, Random Forest, XGBoost, Mean–Variance, Black–Litterman</strong></div>
             </div>
           </header>
-          <figure class="project-detail__cover">
-            <img src="assets/projects/portfolio.png" alt="Conceptual allocation ring and diversified assets in a warm editorial illustration." width="1536" height="1024" loading="lazy" decoding="async" />
-            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          <figure class="project-flow" aria-labelledby="portfolio-flow-title">
+            <figcaption class="project-flow__heading" id="portfolio-flow-title"><span>Project at a glance</span>From Taiwan equities to risk–return comparisons</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h38L29 25v13l-10 5V25z"/><path d="M13 14h22" opacity=".45"/></svg></div>
+                <h3>Screen equities</h3>
+                <ul><li>30-stock starting universe</li><li>22 correlation-screened stocks</li><li>10 Taiwan ETF benchmarks</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="10" height="10" rx="2"/><rect x="32" y="7" width="10" height="10" rx="2"/><rect x="19" y="31" width="10" height="10" rx="2"/><path d="M16 12h16M11 17l13 14 13-14M24 12v19"/></svg></div>
+                <h3>Forecast &amp; allocate</h3>
+                <ul><li>RF, XGBoost &amp; LSTM forecasts</li><li>Six-stock portfolio selection</li><li>Mean–variance &amp; Black–Litterman</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7v33h33M15 31l8-10 8 5 10-15M33 11h8v8"/><path d="M15 35v-4m8 4V21m8 14v-9" opacity=".4"/></svg></div>
+                <h3>Compare portfolios</h3>
+                <ul><li>Period price return</li><li>Annualized volatility</li><li>Risk-adjusted Sharpe ratio</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>Mean–variance · 40.40% price return · Sharpe 2.584</strong><p>Jan 3–Nov 30, 2023 retrospective comparison; distributions and costs excluded.</p></div>
           </figure>
           <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>Originally developed in Spring 2024, this project starts with 30 Taiwan stocks and 10 ETF benchmarks. It preserves the presentation’s 22-stock screened set and final six-stock selection, while the maintained repository separates historical portfolio reconstruction from newly trained forecasting models and in-sample allocation refits.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Investigate how correlation screening, price forecasting, and allocation choices affect risk and return, and compare the historical stock portfolios with ETF alternatives under explicit calculation assumptions.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Aligned local closing-price workbooks and examined returns, correlations, cross-correlations, and recurrence plots. Stock screening uses an absolute log-return correlation threshold of 0.6.</li><li>Compared Random Forest, XGBoost, and LSTM one-step forecasts across the 22-stock set, using 20 observed prices per input window and chronological 80/20 train–test splits.</li><li>Reconstructed the presentation’s mean–variance, Black–Litterman, and equal-weight six-stock portfolios using normalized initial capital weights and fixed initial share holdings.</li><li>Evaluated January 3–November 30, 2023 price performance against 10 ETFs, using 252 trading days for annualization and a 1.565% annual risk-free rate. Newly refitted allocations are reported separately.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Historical mean–variance portfolio: 40.40% period price return, 15.10% annualized volatility, and Sharpe ratio 2.584.</li><li>Historical Black–Litterman portfolio: 38.71% period price return, 17.82% annualized volatility, and Sharpe ratio 2.134.</li><li>Historical equal-weight portfolio: 39.57% period price return, 16.57% annualized volatility, and Sharpe ratio 2.326.</li><li>Each portfolio’s period price return exceeded 7 of the 10 ETF benchmarks. ETF 00757 returned more, while 00713 had lower volatility and a higher Sharpe ratio.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project makes the trade-offs between return, risk, and allocation assumptions inspectable through code and saved tables. These are retrospective price-return comparisons, not evidence of an out-of-sample investment strategy: distributions, transaction costs, taxes, and corporate-action adjustments are excluded, and refitted portfolios use the same window for fitting and evaluation. Historical selection and current model retraining should not be treated as one prospective backtest.</p></section>
-          <details class="project-detail__sources">
-            <summary>Sources &amp; evaluation context</summary>
-            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
-            <ul><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/README.md" target="_blank" rel="noopener noreferrer">Methodology and maintained workflow ↗</a></li><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/outputs/tables/presentation_price_performance.csv" target="_blank" rel="noopener noreferrer">Historical performance table ↗</a></li><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/R/portfolio.R" target="_blank" rel="noopener noreferrer">Portfolio calculation code ↗</a></li></ul>
-          </details>
           <footer class="project-detail__actions">
             <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
@@ -497,20 +555,32 @@
               <div><span>Skills</span><strong>Python, PyTorch, Causal Attention, Autoregressive Modeling, Curriculum Learning</strong></div>
             </div>
           </header>
-          <figure class="project-detail__cover">
-            <img src="assets/projects/transformer.png" alt="Conceptual arithmetic tokens flowing through translucent attention layers." width="1536" height="1024" loading="lazy" decoding="async" />
-            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          <figure class="project-flow" aria-labelledby="transformer-flow-title">
+            <figcaption class="project-flow__heading" id="transformer-flow-title"><span>Project at a glance</span>From arithmetic tokens to step-by-step reductions</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="40" height="30" rx="5"/><path d="m15 17-6 7 6 7m18-14 6 7-6 7m-7-15-4 16"/></svg></div>
+                <h3>Encode expressions</h3>
+                <ul><li>Positive-integer addition</li><li>17-token character vocabulary</li><li>128-token context window</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="10" height="10" rx="2"/><rect x="32" y="7" width="10" height="10" rx="2"/><rect x="19" y="31" width="10" height="10" rx="2"/><path d="M16 12h16M11 17l13 14 13-14M24 12v19"/></svg></div>
+                <h3>Train a causal model</h3>
+                <ul><li>Six layers · six attention heads</li><li>Three curriculum phases</li><li>18,000 training steps</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M18 7V4h12v3M16 20l5 5 11-11M17 33h14"/></svg></div>
+                <h3>Generate &amp; evaluate</h3>
+                <ul><li>Greedy next-token decoding</li><li>Complete reduction sequences</li><li>Exact-sequence matching</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>100% exact match across 10 synthetic benchmark settings</strong><p>1,000 examples per setting; this result does not establish general mathematical reasoning.</p></div>
           </figure>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS542 deep-learning project using a course-provided synthetic arithmetic generator. The implementation extends the model configuration, causal sequence-modeling pipeline, curriculum training, exact-match evaluation, and standalone CPU inference. Inputs are positive-integer addition expressions ending in an equals sign; outputs include every intermediate reduction and the final answer.</p></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A deep-learning project that trains a compact causal Transformer on synthetically generated arithmetic. The workflow combines character-level tokenization, curriculum training, exact-match evaluation, and standalone CPU inference. Inputs are positive-integer addition expressions ending in an equals sign; outputs include every intermediate reduction and the final answer.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Learn correct full-sequence arithmetic reductions across different operand counts and digit lengths without a pretrained language model, and evaluate the entire generated sequence rather than only the final number.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Encoded expressions with a 17-token character vocabulary and dynamically padded variable-length batches. Padding tokens are excluded from next-token cross-entropy loss.</li><li>Configured six Transformer layers with six attention heads, a 192-dimensional representation, learned positional embeddings, and an explicit causal attention mask.</li><li>Trained with AdamW through three curriculum phases totaling 18,000 steps, increasing expression length and operand digit count.</li><li>Used greedy autoregressive decoding and exact string matching on 1,000 generated examples per benchmark setting; saved the weights and a command-line inference script.</li></ul></section>
-          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The saved notebook reports 100% exact-sequence accuracy in all 10 required benchmark settings, with 1,000 examples per setting.</li><li>The settings cover 2–3 operands with 1–3 digits and 4–5 operands with 1–2 digits.</li><li>The repository includes trained weights and predict.py for standalone CPU inference, including the recorded reduction (((1+2)+1)+8)=((3+1)+8)=(4+8)=12.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The saved notebook reports 100% exact-sequence accuracy in all 10 benchmark settings, with 1,000 examples per setting.</li><li>The settings cover 2–3 operands with 1–3 digits and 4–5 operands with 1–2 digits.</li><li>The repository includes trained weights and predict.py for standalone CPU inference, including the recorded reduction (((1+2)+1)+8)=((3+1)+8)=(4+8)=12.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The work demonstrates causal masking, sequence batching, curriculum training, and the separation of training from inference. Its strong benchmark result is specific to synthetic positive-integer addition under the generator’s rules, with a 128-token context limit. It is not evidence of general mathematical reasoning, and broader out-of-distribution generalization remains untested.</p></section>
-          <details class="project-detail__sources">
-            <summary>Sources &amp; evaluation context</summary>
-            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
-            <ul><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/transformer_math_reasoning.ipynb" target="_blank" rel="noopener noreferrer">Training notebook and benchmark outputs ↗</a></li><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/predict.py" target="_blank" rel="noopener noreferrer">Standalone inference ↗</a></li><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/README.md" target="_blank" rel="noopener noreferrer">Project documentation ↗</a></li></ul>
-          </details>
           <footer class="project-detail__actions">
             <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/transformer-math-reasoning" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
@@ -532,20 +602,32 @@
               <div><span>Skills</span><strong>Python, PyTorch, CNNs, CUDA AMP, Data Augmentation, Model Evaluation</strong></div>
             </div>
           </header>
-          <figure class="project-detail__cover">
-            <img src="assets/projects/butterfly.png" alt="Conceptual butterflies with image crops and layered visual features." width="1536" height="1024" loading="lazy" decoding="async" />
-            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          <figure class="project-flow" aria-labelledby="butterfly-flow-title">
+            <figcaption class="project-flow__heading" id="butterfly-flow-title"><span>Project at a glance</span>From butterfly observations to class probabilities</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="6" width="38" height="36" rx="4"/><circle cx="16" cy="17" r="4"/><path d="m6 35 12-11 9 8 7-6 9 9"/></svg></div>
+                <h3>Prepare images</h3>
+                <ul><li>224 × 224 RGB inputs</li><li>Nine frequent species + Other</li><li>Augmentation &amp; normalization</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="10" height="10" rx="2"/><rect x="32" y="7" width="10" height="10" rx="2"/><rect x="19" y="31" width="10" height="10" rx="2"/><path d="M16 12h16M11 17l13 14 13-14M24 12v19"/></svg></div>
+                <h3>Learn visual features</h3>
+                <ul><li>Custom five-stage CNN</li><li>Batch normalization &amp; ReLU</li><li>Mixed-precision PyTorch training</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M18 7V4h12v3M16 20l5 5 11-11M17 33h14"/></svg></div>
+                <h3>Validate &amp; infer</h3>
+                <ul><li>Select checkpoint at epoch 25</li><li>Predict 10 class probabilities</li><li>Export test-image predictions</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>79.22% validation accuracy at the selected checkpoint</strong><p>Validation loss 0.6141; test accuracy is unavailable because test labels are not provided.</p></div>
           </figure>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS542 computer-vision project using iNaturalist-derived butterfly observations. The nine most frequent training species are modeled separately, while remaining species are grouped as Other, creating 10 target classes. The repository includes the training notebook, tabular metadata, processed labels, and test predictions, but not the full image collection.</p></section>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A computer-vision project using iNaturalist-derived butterfly observations. The nine most frequent training species are modeled separately, while remaining species are grouped as Other, creating 10 target classes. The repository includes the training notebook, tabular metadata, processed labels, and test predictions, but not the full image collection.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Design and train a CNN from scratch, manage the long-tailed label distribution, and select a checkpoint using validation performance before producing class probabilities for unseen test images.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Explored class frequencies and constructed a shared top-nine-plus-Other label mapping for training and validation.</li><li>Implemented a custom PyTorch Dataset and DataLoaders, 224 × 224 RGB preprocessing, ImageNet normalization, and training-time augmentation.</li><li>Built five convolutional stages with batch normalization and ReLU, two max-pooling steps, a 256-to-64 channel bottleneck, and a 10-logit classifier.</li><li>Trained with Adam, cross-entropy loss, CUDA mixed precision, gradient clipping at 5.0, and early stopping after three epochs without validation-loss improvement.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The selected checkpoint at epoch 25 achieved 79.22% validation accuracy and 0.6141 validation loss.</li><li>At that checkpoint, training accuracy was 78.44% and training loss was 0.6391.</li><li>The inference workflow exports a probability for each of the 10 classes per test image. Test accuracy is not reported because test ground-truth labels are unavailable.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>This project connects data preparation, model architecture, GPU training, checkpoint selection, and inference in an end-to-end workflow. Grouping rare species into Other simplifies the task but limits fine-grained identification; class-specific evaluation and comparison with pretrained backbones are useful next steps, not completed results.</p></section>
-          <details class="project-detail__sources">
-            <summary>Sources &amp; evaluation context</summary>
-            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
-            <ul><li><a href="https://github.com/JasonHonghzj/butterfly-species-classification/blob/main/butterfly_classification.ipynb" target="_blank" rel="noopener noreferrer">Model, training, and recorded metrics ↗</a></li><li><a href="https://github.com/JasonHonghzj/butterfly-species-classification/blob/main/README.md" target="_blank" rel="noopener noreferrer">Project and dataset documentation ↗</a></li></ul>
-          </details>
           <footer class="project-detail__actions">
             <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/butterfly-species-classification" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
@@ -567,20 +649,32 @@
               <div><span>Skills</span><strong>Python, Tkinter, Heuristic Scheduling, Input Validation, pytest, CSV / JSON</strong></div>
             </div>
           </header>
-          <figure class="project-detail__cover">
-            <img src="assets/projects/mahjong.png" alt="Conceptual four-player Mahjong table connected to tournament schedule cards." width="1536" height="1024" loading="lazy" decoding="async" />
-            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          <figure class="project-flow" aria-labelledby="mahjong-flow-title">
+            <figcaption class="project-flow__heading" id="mahjong-flow-title"><span>Project at a glance</span>From player requirements to balanced match schedules</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="8" r="4"/><circle cx="8" cy="24" r="4"/><circle cx="40" cy="24" r="4"/><circle cx="24" cy="40" r="4"/><rect x="16" y="16" width="16" height="16" rx="3"/></svg></div>
+                <h3>Set the constraints</h3>
+                <ul><li>Player list &amp; appearances</li><li>Four distinct players per match</li><li>Total seats divisible by four</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="10" height="10" rx="2"/><rect x="32" y="7" width="10" height="10" rx="2"/><rect x="19" y="31" width="10" height="10" rx="2"/><path d="M16 12h16M11 17l13 14 13-14M24 12v19"/></svg></div>
+                <h3>Search candidate schedules</h3>
+                <ul><li>Seeded randomized generation</li><li>Penalize repeated pairings</li><li>Reduce consecutive appearances</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M18 7V4h12v3M16 20l5 5 11-11M17 33h14"/></svg></div>
+                <h3>Validate &amp; export</h3>
+                <ul><li>Check appearance counts</li><li>Review pairing summaries</li><li>Export TXT / CSV / JSON</li></ul>
+              </li>
+            </ol>
+            <div class="project-flow__takeaway"><strong>Saved example · 8 players × 4 appearances → 8 matches</strong><p>Validated sample schedule; heuristic search does not guarantee an optimal solution.</p></div>
           </figure>
           <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A Python application that turns a player list and required appearances into a validated sequence of four-player matches. It exposes a command-line interface, a Tkinter desktop interface, and a reusable Python API, using only the standard library at runtime.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Give every player the requested number of appearances, keep each match to four distinct participants, and reduce repeated pairings and consecutive appearances while making the schedule easy to review and export.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Validated player names, equal appearance requirements, and divisibility of total player seats by four before generation.</li><li>Built candidate schedules with randomized, feasibility-aware selection from eligible four-player groups, penalizing repeated pairs and consecutive appearances.</li><li>Compared complete schedules using pair-frequency variance, maximum pair frequency, and consecutive appearances; retained the lowest-scoring valid candidate across multiple attempts.</li><li>Added seeded generation, player-by-player and pairing summaries, TXT / CSV / JSON exports, and tests covering constraints, reproducibility, validation, and export formats.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The checked-in sample shows eight players appearing four times each across eight four-player matches, with a VALID validation result.</li><li>The application provides both desktop and command-line workflows, plus inspectable match lists and per-player appearance summaries.</li><li>The repository includes automated tests for schedule constraints, repeated-seed consistency, invalid input handling, and all three export formats; no tournament-scale performance benchmark is claimed.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The tool replaces manual schedule bookkeeping with reproducible generation and explicit validation. It is a randomized heuristic, not a guaranteed optimum: repeated four-player groups may occur, valid requests may exhaust the attempt limit, and large player pools can be slow. Its practical value is transparent scheduling support rather than a claim of perfect fairness.</p></section>
-          <details class="project-detail__sources">
-            <summary>Sources &amp; evaluation context</summary>
-            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
-            <ul><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/src/mahjong_match/generator.py" target="_blank" rel="noopener noreferrer">Scheduling algorithm ↗</a></li><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/examples/sample_output.txt" target="_blank" rel="noopener noreferrer">Example schedule ↗</a></li><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/tests/test_schedule.py" target="_blank" rel="noopener noreferrer">Validation and export tests ↗</a></li></ul>
-          </details>
           <footer class="project-detail__actions">
             <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Majhong_matcher" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
