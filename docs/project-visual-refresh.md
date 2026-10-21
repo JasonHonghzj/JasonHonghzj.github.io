@@ -1,5 +1,7 @@
 # Project visual refresh — October 21, 2026
 
+The Epidemic card, technical tags, and workflow were subsequently refined using new source material. See [epidemic-project-update.md](epidemic-project-update.md) for that later update; its image prompts supersede the Epidemic cover entry below.
+
 ## Implementation
 - Seven 3:2 photorealistic covers generated with built-in ImageGen; no CLI fallback.
 - All deployed image paths are under `assets/projects/*-realistic.png`.

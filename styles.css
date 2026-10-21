@@ -1369,6 +1369,63 @@ html[data-theme="dark"] .project-flow__step:nth-child(3) { --flow-accent: #edb69
   text-align: center;
 }
 
+.project-flow__art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.project-flow__ownership {
+  margin: 0 0 10px;
+  color: var(--flow-accent);
+  font-family: var(--font-label);
+  font-size: 0.58rem;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 0;
+}
+
+.project-facts > div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 16px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--sage) 45%, var(--paper));
+  text-align: center;
+}
+
+.project-facts dt { color: var(--muted); font-size: 0.75rem; line-height: 1.45; }
+.project-facts dd { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 3vw, 1.8rem); font-weight: 600; line-height: 1.2; }
+.project-flow__note { margin: 15px 0 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
+
+#project-epidemic .project-detail__panel p + p { margin-top: 14px; }
+
+.indicator-list { margin: 20px 0; }
+.indicator-list > div { display: grid; grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.5fr); gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.indicator-list > div:first-child { border-top: 1px solid var(--line); }
+.indicator-list dt { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 500; line-height: 1.5; }
+.indicator-list dd { margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.5; }
+
+@media (max-width: 560px) {
+  .project-facts { grid-template-columns: 1fr; gap: 8px; }
+  .project-facts > div { flex-direction: row; align-items: center; justify-content: space-between; gap: 18px; text-align: left; }
+  .project-facts dd { flex-shrink: 0; font-size: 1.3rem; }
+  .indicator-list > div { grid-template-columns: 1fr; gap: 5px; }
+}
+
 .project-flow__takeaway strong { display: block; font-size: 1.05rem; font-weight: 600; line-height: 1.5; }
 .project-flow__takeaway p { margin: 6px 0 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
 

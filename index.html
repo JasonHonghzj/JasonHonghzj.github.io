@@ -221,11 +221,11 @@
         <div class="project-grid">
           <article class="project-card project-card--lavender reveal">
             <div class="project-topline"><span>Big Data Engineering</span></div>
-            <img class="project-cover" src="assets/projects/epidemic-realistic.png" alt="AI-generated concept: public-health data workstation with epidemic maps and event analytics." width="1536" height="1024" loading="lazy" decoding="async" />
+            <img class="project-cover" src="assets/projects/epidemic-engine-cover-v2.png" alt="AI-generated concept: synthetic health-event routing, Spark analytics tables, and anomaly detection at a data-engineering workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Epidemic Analytics Engine</h3>
-              <p>Spark batch pipelines process four typed Kafka streams into structured MySQL analytics, with anomaly detection and outbreak prediction layered on top.</p>
-              <ul><li>Apache Kafka</li><li>Apache Spark</li><li>MySQL</li></ul>
+              <p>Built PySpark batch analytics and ML workflows for synthetic epidemic events, delivering five core indicators, anomaly detection, and a risk-classification prototype.</p>
+              <ul><li>PySpark</li><li>MySQL</li><li>scikit-learn</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-epidemic">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
@@ -328,7 +328,7 @@
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <h2 class="section-index" id="contact-title">Contact</h2>
-        <p class="contact-invitation">Let's Connect！</p>
+        <p class="contact-invitation">Let's Connect!</p>
         <p>Find me online or send a note — I’m always open to thoughtful conversations and new opportunities.</p>
         <div class="contact-grid">
           <a class="contact-card" href="https://www.linkedin.com/in/zhijunhong" target="_blank" rel="noreferrer">
@@ -361,40 +361,77 @@
         <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
         <div class="project-detail">
           <header class="project-detail__header">
-            <p class="project-detail__eyebrow">Big Data Engineering</p>
+            <p class="project-detail__eyebrow">Data Engineering &amp; Applied ML</p>
             <h2 id="project-epidemic-title">Epidemic Analytics Engine</h2>
-            <p class="project-detail__intro">A streaming-to-analytics system designed to convert fast-moving public-health signals into structured, decision-ready insight.</p>
+            <p class="project-detail__intro">PySpark analytics and applied ML for synthetic epidemic events — from regional indicators to anomaly detection and risk-classification prototypes.</p>
             <div class="project-detail__meta">
               <div><span>Timeline</span><strong class="project-term">Spring 2026</strong></div>
-              <div><span>Skills</span><strong>Apache Spark, Kafka, MySQL, Python, Machine Learning</strong></div>
+              <div><span>Skills</span><strong>PySpark / Spark SQL, MySQL, scikit-learn, Kafka, pandas, NumPy, OpenShift</strong></div>
             </div>
           </header>
-          <figure class="project-flow" aria-labelledby="epidemic-flow-title">
-            <figcaption class="project-flow__heading" id="epidemic-flow-title"><span>Project at a glance</span>From public-health events to analytical insight</figcaption>
+          <figure class="project-flow project-flow--epidemic" aria-labelledby="epidemic-flow-title">
+            <figcaption class="project-flow__heading" id="epidemic-flow-title"><span>Project at a glance</span>From synthetic events to analytical signals</figcaption>
+            <img class="project-flow__art" src="assets/projects/epidemic-engine-workflow-v2.png" alt="AI-generated architecture illustration: event documents flow through routing, batch analytics and database storage, then anomaly detection and classification. Exact stages are described below." width="1983" height="793" loading="lazy" decoding="async" />
             <ol class="project-flow__steps">
               <li class="project-flow__step">
-                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12m-12 12h12m-12 12h12m12-24h12m-12 12h12m-12 12h12M18 12l12 12-12 12"/><circle cx="24" cy="24" r="4"/></svg></div>
-                <h3>Ingest signals</h3>
-                <ul><li>Four typed Kafka streams</li><li>Public-health event data</li><li>Severity &amp; capacity indicators</li></ul>
+                <p class="project-flow__ownership">Team platform</p>
+                <h3>Route health events</h3>
+                <ul><li>Kafka event ingestion</li><li>Tekton validation &amp; enrichment</li><li>Four typed event categories</li></ul>
               </li>
               <li class="project-flow__step">
-                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="10" rx="15" ry="6"/><path d="M9 10v14c0 8 30 8 30 0V10M9 24v14c0 8 30 8 30 0V24"/></svg></div>
-                <h3>Structure the data</h3>
-                <ul><li>Spark batch processing</li><li>Aggregate epidemic signals</li><li>Store results in MySQL</li></ul>
+                <p class="project-flow__ownership">My contribution</p>
+                <h3>Build batch analytics</h3>
+                <ul><li>PySpark / Spark SQL aggregation</li><li>Five core analytical indicators</li><li>MySQL schemas &amp; persistence</li></ul>
               </li>
               <li class="project-flow__step">
-                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7v33h33M15 31l8-10 8 5 10-15M33 11h8v8"/><path d="M15 35v-4m8 4V21m8 14v-9" opacity=".4"/></svg></div>
-                <h3>Enable analytics</h3>
-                <ul><li>Anomaly detection design</li><li>Outbreak prediction design</li><li>Analysis-ready health data</li></ul>
+                <p class="project-flow__ownership">My contribution</p>
+                <h3>Detect &amp; classify</h3>
+                <ul><li>Z-score &amp; Isolation Forest</li><li>Random Forest with synthetic labels</li><li>Persist ML outputs in MySQL</li></ul>
               </li>
             </ol>
-            <div class="project-flow__takeaway"><strong>Four event streams → one structured analytics workflow</strong><p>Pipeline architecture demonstrated; predictive performance remains to be evaluated.</p></div>
+            <dl class="project-facts">
+              <div><dt>Core analytics outputs</dt><dd>5</dd></div>
+              <div><dt>Configured Spark schedule</dt><dd>Every 6h</dd></div>
+              <div><dt>Configured ML schedule</dt><dd>Every 12h</dd></div>
+            </dl>
+            <p class="project-flow__note">Event-driven ingestion with scheduled batch analysis. These figures describe implementation scope and configuration, not measured throughput or prediction accuracy.</p>
           </figure>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A data engineering project connecting four typed Kafka event streams to Spark batch pipelines and MySQL. The workflow organizes epidemiological data for downstream analysis of severity, hospital capacity, vaccination coverage, and epidemic patterns.</p></section>
-          <section class="project-detail__panel"><h3>Objective</h3><p>Build a structured analytical foundation for combining epidemic signals and designing anomaly detection and outbreak prediction workflows.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Engineered Spark batch pipelines to process four typed Kafka event streams.</li><li>Aggregated epidemiological data and stored structured analytical results in MySQL.</li><li>Designed an ML pipeline for anomaly detection and outbreak prediction across public-health indicators.</li></ul></section>
-          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>Delivered a Kafka–Spark–MySQL workflow that transforms four event streams into structured data for downstream analytics, alongside an ML pipeline design for identifying unusual patterns and forecasting outbreaks.</p></section>
-          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project connects data engineering with predictive analysis: organizing event data is a necessary step toward interpreting changes in epidemic conditions. The work demonstrates the pipeline architecture; predictive accuracy and real-world operational impact remain to be evaluated.</p></section>
+          <section class="project-detail__panel">
+            <h3>Project Overview &amp; Description</h3>
+            <p>A collaborative platform for synthetic epidemiological events: symptom reports, clinic visits, hospital admissions, and vaccination records. The team pipeline uses Kafka and Tekton on OpenShift to validate, enrich, and route events before scheduled Spark analytics and MySQL storage.</p>
+            <p><strong>My role: Data Engineering &amp; Applied ML.</strong> I implemented the core Spark analytics, analytical tables, feature engineering, anomaly detection, and synthetic-label risk-classification workflow. REST APIs, the web dashboard, alerting, notebooks, and the later vaccination aggregation were team extensions.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Objective</h3>
+            <p>Turn heterogeneous event records into consistent regional and time-based indicators, persist reusable analytical data, and extend those outputs into repeatable anomaly-detection and outbreak-risk classification prototypes.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Approach</h3>
+            <ul>
+              <li>Developed PySpark batch jobs to read typed Kafka topics, normalize event fields, and aggregate data by region and time using DataFrames and Spark SQL.</li>
+              <li>Implemented five core analytics outputs and MySQL table schemas and indexes, with PyMySQL-based result persistence.</li>
+              <li>Engineered regional features by joining event volume, growth trends, severity, hospital-to-clinic event ratios, and available-bed data; handled missing values for downstream ML.</li>
+              <li>Implemented Z-score and Isolation Forest anomaly detection, plus a Random Forest classification pipeline using rule-generated synthetic outbreak labels. Added train/test evaluation, classification-report, and confusion-matrix code.</li>
+              <li>Created the ML container and OpenShift CronJob configuration, and wrote anomaly and classification outputs back to MySQL for repeated analysis.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Results &amp; Key Findings</h3>
+            <p>Implemented five core analytics outputs, connecting event ingestion to stored indicators and downstream ML features:</p>
+            <dl class="indicator-list">
+              <div><dt>Hourly event counts</dt><dd>Event counts by hour, event type, and region.</dd></div>
+              <div><dt>Daily average severity</dt><dd>Regional daily means of numeric severity scores.</dd></div>
+              <div><dt>Hospital / clinic event ratio</dt><dd>Daily hospital-admission counts divided by clinic-visit counts; an aggregate event ratio, not patient-level conversion.</dd></div>
+              <div><dt>Hospital capacity pressure</dt><dd>Average available beds and rule-based capacity flags by day and region.</dd></div>
+              <div><dt>Event-volume anomalies</dt><dd>Regional hourly event-count deviations identified with Z-scores.</dd></div>
+            </dl>
+            <p>The deployment manifests configure Spark analytics every six hours and ML every twelve hours. The ML implementation persists anomaly flags, risk scores, and classifications to MySQL; these are prototype outputs, not validated real-world epidemic forecasts.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Impact &amp; Conclusion</h3>
+            <p>This work connects data engineering and applied ML through reusable SQL outputs, regional feature engineering, and containerized batch workflows. It demonstrates my contribution to the analytical and modeling layers of a larger team platform.</p>
+            <p>The system uses synthetic events and rule-generated labels. Temporal alignment and validation methodology still need refinement before forecasting accuracy or real-world operational impact can be established; no such performance claim is made here.</p>
+          </section>
           <footer class="project-detail__actions">
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
           </footer>

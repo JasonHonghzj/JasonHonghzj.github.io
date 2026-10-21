@@ -6,10 +6,19 @@ This refresh reads source files and saved results; it does not rerun the underly
 
 ## Scope
 
-- Seven projects total. Epidemic Analytics Engine and Medical Case Analytics retain their existing résumé-based content because no repository was supplied.
-- The five projects below are updated from their supplied repositories.
+- Seven projects total. Medical Case Analytics retains its résumé-based content.
+- Epidemic Analytics Engine now uses the owner's supplied project analysis and the referenced local source checkout; the other five projects use their supplied repositories.
 - Seven photorealistic covers now appear on the project cards. They are AI-generated concepts, not actual screenshots, measured charts, or empirical results.
 - Detail dialogs use separate responsive process diagrams with real text. Current cover prompts and the technical-tag rationale are recorded in [project-visual-refresh.md](project-visual-refresh.md). Original illustration assets and prompts are retained as historical references.
+
+## Epidemic Analytics Engine
+
+Updated October 21, 2026 from the owner's project-analysis attachment, section 2, and the referenced local Epidemic Engine checkout. See [epidemic-project-update.md](epidemic-project-update.md) for the evidence map and limitations.
+
+- Personal scope: PySpark batch analytics, five core indicators, MySQL persistence, feature engineering, anomaly detection, and synthetic-label Random Forest risk classification.
+- Team context: Kafka/Tekton event validation and routing, API/dashboard, alerting, notebook visualizations, and later vaccination aggregation.
+- Configured schedules: Spark every six hours; ML every twelve hours. These are manifest settings, not measured latency or throughput.
+- No model-accuracy claim or prospective outbreak-forecast claim is made.
 
 ## Stroke Risk Prediction
 
