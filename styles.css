@@ -743,6 +743,17 @@ h2 {
   margin: 22px 0;
 }
 
+.project-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin: 22px 0;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
 .project-graphic--stream {
   display: flex;
   align-items: center;
@@ -1251,6 +1262,78 @@ h2 {
   place-items: center;
   border-radius: 22px;
 }
+
+.project-detail__cover {
+  margin: 36px 0 22px;
+}
+
+.project-detail__cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.project-detail__cover figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.project-detail__sources {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-detail__sources summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.project-detail__sources p { margin-top: 12px; }
+.project-detail__sources ul { padding-left: 20px; }
+.project-detail__sources a { text-decoration: underline; text-underline-offset: 3px; }
+
+.project-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.project-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.project-action--code { background: var(--ink); color: var(--paper); }
+.project-action svg { width: 21px; height: 21px; fill: currentColor; flex-shrink: 0; }
+.project-action:hover { border-color: var(--peach-deep); }
+.project-action:focus-visible,
+.project-detail__sources summary:focus-visible,
+.project-detail__sources a:focus-visible { outline: 3px solid var(--peach-deep); outline-offset: 4px; }
 
 .pipeline-diagram,
 .case-diagram,

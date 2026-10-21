@@ -96,6 +96,8 @@ systemTheme.addEventListener("change", (event) => {
 updateThemeControl();
 
 projectTriggers.forEach((trigger) => {
+  trigger.setAttribute("aria-haspopup", "dialog");
+  trigger.setAttribute("aria-controls", trigger.dataset.projectDialog);
   trigger.addEventListener("click", () => {
     const dialog = document.getElementById(trigger.dataset.projectDialog);
     if (!(dialog instanceof HTMLDialogElement)) return;
@@ -106,7 +108,14 @@ projectTriggers.forEach((trigger) => {
 });
 
 projectDialogs.forEach((dialog) => {
-  dialog.querySelector("[data-close-dialog]")?.addEventListener("click", () => dialog.close());
+  dialog.querySelectorAll("[data-close-dialog]").forEach((button) => {
+    button.addEventListener("click", () => {
+      dialog.close();
+      if (button.hasAttribute("data-back-projects")) {
+        document.getElementById("projects")?.scrollIntoView({ behavior: "instant", block: "start" });
+      }
+    });
+  });
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();

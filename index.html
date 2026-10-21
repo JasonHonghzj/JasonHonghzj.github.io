@@ -220,7 +220,7 @@
 
         <div class="project-grid">
           <article class="project-card project-card--lavender reveal">
-            <div class="project-topline"><span>Big Data Engineering</span><span>01</span></div>
+            <div class="project-topline"><span>Big Data Engineering</span></div>
             <div class="project-graphic project-graphic--stream" aria-hidden="true">
               <span></span><span></span><span></span><span></span><span></span>
             </div>
@@ -233,7 +233,7 @@
           </article>
 
           <article class="project-card project-card--peach reveal" data-delay="80">
-            <div class="project-topline"><span>Legal Data Analytics</span><span>02</span></div>
+            <div class="project-topline"><span>Legal Data Analytics</span></div>
             <div class="project-graphic project-graphic--cases" aria-hidden="true">
               <strong>10</strong><span>years of<br />court filings</span><i>−96%</i>
             </div>
@@ -246,30 +246,57 @@
           </article>
 
           <article class="project-card project-card--sage reveal">
-            <div class="project-topline"><span>Healthcare ML</span><span>03</span></div>
-            <div class="project-graphic project-graphic--risk" aria-hidden="true">
-              <div><span>0.885</span><small>AUC</small></div>
-              <svg viewBox="0 0 220 90" role="presentation"><path d="M5 81 C30 79, 45 67, 65 62 S105 50, 121 32 S165 19, 215 7"/><path class="guide" d="M5 81 L215 7"/></svg>
-            </div>
+            <div class="project-topline"><span>Healthcare Machine Learning</span></div>
+            <img class="project-cover" src="assets/projects/stroke.png" alt="Conceptual brain and connected patient records in sage and terracotta." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Stroke Risk Prediction</h3>
-              <p>Five classification models evaluated across 14,000+ patient records, paired with clustering and PCA to reveal three distinct risk profiles.</p>
-              <ul><li>XGBoost</li><li>PCA</li><li>GMM</li><li>MLP</li></ul>
+              <p>Explore 14,976 health records through symptom-based prediction and patient segmentation, with five classifiers and four interpreted risk groups.</p>
+              <ul><li>Classification</li><li>Clustering</li><li>EDA</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-stroke">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
-          <article class="project-card project-card--ink reveal" data-delay="80">
-            <div class="project-topline"><span>Quantitative Finance</span><span>04</span></div>
-            <div class="project-graphic project-graphic--portfolio" aria-hidden="true">
-              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <p>Top 20<br /><span>by Sharpe ratio</span></p>
-            </div>
+          <article class="project-card project-card--ink reveal">
+            <div class="project-topline"><span>Quantitative Finance</span></div>
+            <img class="project-cover" src="assets/projects/portfolio.png" alt="Conceptual allocation ring and diversified assets in a warm editorial illustration." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
               <h3>Portfolio Optimization</h3>
-              <p>An LSTM forecasting model paired with Black–Litterman optimization outperformed 70% of 100 benchmark ETFs on risk-adjusted performance.</p>
-              <ul><li>LSTM</li><li>R</li><li>Black–Litterman</li></ul>
+              <p>Compare forecasting models and six-stock allocations against 10 Taiwan ETF benchmarks, with transparent return, volatility, and Sharpe calculations.</p>
+              <ul><li>LSTM</li><li>Black–Litterman</li><li>R</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-portfolio">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--lavender reveal">
+            <div class="project-topline"><span>Deep Learning · Sequence Modeling</span></div>
+            <img class="project-cover" src="assets/projects/transformer.png" alt="Conceptual arithmetic tokens flowing through translucent attention layers." width="1536" height="1024" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>Transformer Arithmetic Reasoning</h3>
+              <p>Train a compact causal Transformer from scratch to generate complete, step-by-step reductions of parenthesized addition expressions.</p>
+              <ul><li>PyTorch</li><li>Transformers</li><li>Sequence Modeling</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-transformer">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--sage reveal">
+            <div class="project-topline"><span>Deep Learning · Computer Vision</span></div>
+            <img class="project-cover" src="assets/projects/butterfly.png" alt="Conceptual butterflies with image crops and layered visual features." width="1536" height="1024" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>Butterfly Species Classification</h3>
+              <p>Build a custom PyTorch CNN for 10 butterfly categories, reaching 79.22% validation accuracy with a complete image-to-probability pipeline.</p>
+              <ul><li>Computer Vision</li><li>CNN</li><li>PyTorch</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-butterfly">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--peach reveal">
+            <div class="project-topline"><span>Side Project · Scheduling</span></div>
+            <img class="project-cover" src="assets/projects/mahjong.png" alt="Conceptual four-player Mahjong table connected to tournament schedule cards." width="1536" height="1024" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>Mahjong Tournament Scheduler</h3>
+              <p>A desktop and command-line tool for balanced four-player schedules, with seeded generation, validation, pairing reports, and TXT / CSV / JSON export.</p>
+              <ul><li>Python</li><li>Tkinter</li><li>Algorithms</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-mahjong">View Project <span aria-hidden="true">→</span></button>
             </div>
           </article>
         </div>
@@ -305,7 +332,7 @@
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <h2 class="section-index" id="contact-title">Contact</h2>
-        <p class="contact-invitation">Let’s connect</p>
+        <p class="contact-invitation">Let's Connect！</p>
         <p>Find me online or send a note — I’m always open to thoughtful conversations and new opportunities.</p>
         <div class="contact-grid">
           <a class="contact-card" href="https://www.linkedin.com/in/zhijunhong" target="_blank" rel="noreferrer">
@@ -354,6 +381,9 @@
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Engineered Spark batch pipelines to process four typed Kafka event streams.</li><li>Aggregated epidemiological data and stored structured analytical results in MySQL.</li><li>Designed an ML pipeline for anomaly detection and outbreak prediction across public-health indicators.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>Delivered a Kafka–Spark–MySQL workflow that transforms four event streams into structured data for downstream analytics, alongside an ML pipeline design for identifying unusual patterns and forecasting outbreaks.</p></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project connects data engineering with predictive analysis: organizing event data is a necessary step toward interpreting changes in epidemic conditions. The work demonstrates the pipeline architecture; predictive accuracy and real-world operational impact remain to be evaluated.</p></section>
+          <footer class="project-detail__actions">
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
         </div>
       </div>
     </dialog>
@@ -377,6 +407,9 @@
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Identified relevant keywords to support classification of medical cases.</li><li>Contributed to a regex and fuzzy-matching workflow for unstructured court records.</li><li>Compared filing trends across medical categories and examined each creditor’s share of cases.</li></ul></section>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Ambulance-related cases declined by 96% over 2015–2025, while other medical categories remained stable.</li><li>Trinity EMS accounted for 60% of ambulance cases.</li><li>MSPCA Angell represented 91% of veterinary filings.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The analysis made category-specific trends and creditor concentration visible within a large collection of court records. These descriptive findings provide a clearer starting point for further investigation; filing patterns alone do not establish their causes.</p></section>
+          <footer class="project-detail__actions">
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
         </div>
       </div>
     </dialog>
@@ -388,18 +421,30 @@
           <header class="project-detail__header">
             <p class="project-detail__eyebrow">Healthcare Machine Learning</p>
             <h2 id="project-stroke-title">Stroke Risk Prediction</h2>
-            <p class="project-detail__intro">A comparative modeling study that combines supervised prediction and patient segmentation to identify meaningful stroke-risk profiles.</p>
+            <p class="project-detail__intro">Connecting exploratory health analysis, patient segmentation, and symptom-based prediction in one reproducible notebook.</p>
             <div class="project-detail__meta">
               <div><span>Timeline</span><strong class="project-term">Fall 2025</strong></div>
-              <div><span>Skills</span><strong>Classification, XGBoost, MLP, K-Means, PCA, GMM, Model Evaluation</strong></div>
+              <div><span>Skills</span><strong>Python, scikit-learn, XGBoost, K-Means, PCA, GMM</strong></div>
             </div>
           </header>
-          <div class="project-detail__visual project-card--sage" aria-hidden="true"><div class="risk-diagram"><strong>14,000+</strong><span>patient records</span><i>0.885 AUC</i></div></div>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A healthcare modeling study using 14,000+ patient records and 19 health variables. The project combines supervised stroke-risk prediction with unsupervised analysis to explore distinct patient risk profiles.</p></section>
-          <section class="project-detail__panel"><h3>Objective</h3><p>Compare classifiers using AUC, accuracy, and F1-score, while using dimensionality reduction and clustering to understand differences among patient groups.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Analyzed patient records across 19 health variables.</li><li>Evaluated Logistic Regression, Random Forest, XGBoost, KNN, and MLP classifiers.</li><li>Applied K-Means, Gaussian mixture modeling, and PCA to investigate patient segments.</li></ul></section>
-          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Reported predictive performance of 0.885 AUC, 80.3% accuracy, and 0.836 F1-score.</li><li>Identified three distinct patient risk profiles through clustering and dimensionality reduction.</li></ul></section>
-          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The study brings together predictive evaluation and patient segmentation, illustrating how both can contribute to understanding health data. These are project-level results; clinical use would require external validation and a separate assessment of deployment suitability.</p></section>
+          <figure class="project-detail__cover">
+            <img src="assets/projects/stroke.png" alt="Conceptual brain and connected patient records in sage and terracotta." width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS701 course project analyzing a health dataset with 14,976 rows and 19 original columns, including risk measures and the target label. The notebook combines engineered risk indices, clustering, regression of stroke-risk percentage, and classification of at-risk status.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Compare predictive models using held-out evaluation, identify patterns associated with the supplied risk measures, and make patient-group differences easier to interpret.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Explored symptom distributions and engineered age-normalized risk, chronic-condition, symptom-burden, and age-adjusted risk indices.</li><li>Standardized five features for K-Means, explored cluster counts using elbow and silhouette analysis, and compared clustering with Gaussian mixture models. The saved profiling run uses four clusters.</li><li>Visualized the clusters with two-component PCA, which retained 81.1% of variance in the standardized clustering features.</li><li>Compared five classifiers and five regressors using 15 symptom indicators and an 80/20 train–test split (random state 42). A separate Logistic Regression submission workflow used age, gender, and symptoms.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>MLP Classifier: ROC AUC 0.8854, accuracy 80.14%, and F1 0.8362 on the notebook’s held-out split.</li><li>Logistic Regression: ROC AUC 0.8853, accuracy 80.34%, and F1 0.8310. These are a separate model’s results, not a combined best-model score.</li><li>The four interpreted clusters had mean supplied risk percentages of 35.23%, 56.36%, 85.89%, and 94.59%.</li><li>The saved MLP regression result was RMSE 18.160 and R² 0.532; the final submission file contained 3,745 predictions.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>This project demonstrates the complementary roles of interpretable exploration and predictive comparison. Cluster labels describe the supplied risk data rather than independently validated clinical categories. The recorded metrics come from a course dataset and a single held-out split; they do not establish clinical validity or real-world treatment utility.</p></section>
+          <details class="project-detail__sources">
+            <summary>Sources &amp; evaluation context</summary>
+            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
+            <ul><li><a href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge/blob/main/ds701_midterm25_notebook.ipynb" target="_blank" rel="noopener noreferrer">Notebook and recorded outputs ↗</a></li><li><a href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge/blob/main/README.md" target="_blank" rel="noopener noreferrer">Dataset and assignment context ↗</a></li></ul>
+          </details>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Health_Prediction_Midterm_Challenge" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
         </div>
       </div>
     </dialog>
@@ -411,18 +456,135 @@
           <header class="project-detail__header">
             <p class="project-detail__eyebrow">Quantitative Finance</p>
             <h2 id="project-portfolio-title">Portfolio Optimization</h2>
-            <p class="project-detail__intro">A forecasting and asset-allocation workflow that connects LSTM return estimates with Black–Litterman portfolio construction.</p>
+            <p class="project-detail__intro">From stock screening and one-step price forecasts to a transparent comparison of mean–variance, Black–Litterman, and equal-weight allocations.</p>
             <div class="project-detail__meta">
               <div><span>Timeline</span><strong class="project-term">Spring 2024</strong></div>
-              <div><span>Skills</span><strong>R, LSTM, Black–Litterman, Portfolio Analytics</strong></div>
+              <div><span>Skills</span><strong>R, Python, LSTM, Random Forest, XGBoost, Mean–Variance, Black–Litterman</strong></div>
             </div>
           </header>
-          <div class="project-detail__visual project-card--ink" aria-hidden="true"><div class="portfolio-diagram"><span>100 ETFs</span><i>→</i><strong>Top 20</strong><small>by Sharpe ratio</small></div></div>
-          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A quantitative finance project combining LSTM stock-price forecasting with Black–Litterman portfolio optimization in R. Risk and performance were benchmarked against 30 leading stocks and 100 ETFs.</p></section>
-          <section class="project-detail__panel"><h3>Objective</h3><p>Connect model-based forecasts to portfolio allocation and evaluate the resulting strategy using risk-adjusted metrics, including the Sharpe ratio.</p></section>
-          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Developed an LSTM model for stock-price forecasting.</li><li>Implemented Black–Litterman portfolio optimization in R.</li><li>Compared risk and performance against 30 stocks and 100 ETFs using risk-adjusted metrics.</li></ul></section>
-          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><p>In the project evaluation, the optimized portfolio outperformed 70% of the 100 benchmark ETFs and ranked among the top 20 by Sharpe ratio.</p></section>
-          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project demonstrates a workflow from forecasting to allocation and comparative evaluation. Its value lies in assessing return alongside risk; the reported benchmark results describe the study and do not establish future performance.</p></section>
+          <figure class="project-detail__cover">
+            <img src="assets/projects/portfolio.png" alt="Conceptual allocation ring and diversified assets in a warm editorial illustration." width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>Originally developed in Spring 2024, this project starts with 30 Taiwan stocks and 10 ETF benchmarks. It preserves the presentation’s 22-stock screened set and final six-stock selection, while the maintained repository separates historical portfolio reconstruction from newly trained forecasting models and in-sample allocation refits.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Investigate how correlation screening, price forecasting, and allocation choices affect risk and return, and compare the historical stock portfolios with ETF alternatives under explicit calculation assumptions.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Aligned local closing-price workbooks and examined returns, correlations, cross-correlations, and recurrence plots. Stock screening uses an absolute log-return correlation threshold of 0.6.</li><li>Compared Random Forest, XGBoost, and LSTM one-step forecasts across the 22-stock set, using 20 observed prices per input window and chronological 80/20 train–test splits.</li><li>Reconstructed the presentation’s mean–variance, Black–Litterman, and equal-weight six-stock portfolios using normalized initial capital weights and fixed initial share holdings.</li><li>Evaluated January 3–November 30, 2023 price performance against 10 ETFs, using 252 trading days for annualization and a 1.565% annual risk-free rate. Newly refitted allocations are reported separately.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Historical mean–variance portfolio: 40.40% period price return, 15.10% annualized volatility, and Sharpe ratio 2.584.</li><li>Historical Black–Litterman portfolio: 38.71% period price return, 17.82% annualized volatility, and Sharpe ratio 2.134.</li><li>Historical equal-weight portfolio: 39.57% period price return, 16.57% annualized volatility, and Sharpe ratio 2.326.</li><li>Each portfolio’s period price return exceeded 7 of the 10 ETF benchmarks. ETF 00757 returned more, while 00713 had lower volatility and a higher Sharpe ratio.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The project makes the trade-offs between return, risk, and allocation assumptions inspectable through code and saved tables. These are retrospective price-return comparisons, not evidence of an out-of-sample investment strategy: distributions, transaction costs, taxes, and corporate-action adjustments are excluded, and refitted portfolios use the same window for fitting and evaluation. Historical selection and current model retraining should not be treated as one prospective backtest.</p></section>
+          <details class="project-detail__sources">
+            <summary>Sources &amp; evaluation context</summary>
+            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
+            <ul><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/README.md" target="_blank" rel="noopener noreferrer">Methodology and maintained workflow ↗</a></li><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/outputs/tables/presentation_price_performance.csv" target="_blank" rel="noopener noreferrer">Historical performance table ↗</a></li><li><a href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization/blob/main/R/portfolio.R" target="_blank" rel="noopener noreferrer">Portfolio calculation code ↗</a></li></ul>
+          </details>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Beyond-ETF-Portfolio-Optimization" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="project-transformer" aria-labelledby="project-transformer-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Deep Learning · Sequence Modeling</p>
+            <h2 id="project-transformer-title">Transformer Arithmetic Reasoning</h2>
+            <p class="project-detail__intro">A small Transformer that learns to generate the intermediate steps of a controlled arithmetic task, one token at a time.</p>
+            <div class="project-detail__meta">
+              <div><span>Timeline</span><strong class="project-term">Fall 2025</strong></div>
+              <div><span>Skills</span><strong>Python, PyTorch, Causal Attention, Autoregressive Modeling, Curriculum Learning</strong></div>
+            </div>
+          </header>
+          <figure class="project-detail__cover">
+            <img src="assets/projects/transformer.png" alt="Conceptual arithmetic tokens flowing through translucent attention layers." width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS542 deep-learning project using a course-provided synthetic arithmetic generator. The implementation extends the model configuration, causal sequence-modeling pipeline, curriculum training, exact-match evaluation, and standalone CPU inference. Inputs are positive-integer addition expressions ending in an equals sign; outputs include every intermediate reduction and the final answer.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Learn correct full-sequence arithmetic reductions across different operand counts and digit lengths without a pretrained language model, and evaluate the entire generated sequence rather than only the final number.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Encoded expressions with a 17-token character vocabulary and dynamically padded variable-length batches. Padding tokens are excluded from next-token cross-entropy loss.</li><li>Configured six Transformer layers with six attention heads, a 192-dimensional representation, learned positional embeddings, and an explicit causal attention mask.</li><li>Trained with AdamW through three curriculum phases totaling 18,000 steps, increasing expression length and operand digit count.</li><li>Used greedy autoregressive decoding and exact string matching on 1,000 generated examples per benchmark setting; saved the weights and a command-line inference script.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The saved notebook reports 100% exact-sequence accuracy in all 10 required benchmark settings, with 1,000 examples per setting.</li><li>The settings cover 2–3 operands with 1–3 digits and 4–5 operands with 1–2 digits.</li><li>The repository includes trained weights and predict.py for standalone CPU inference, including the recorded reduction (((1+2)+1)+8)=((3+1)+8)=(4+8)=12.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The work demonstrates causal masking, sequence batching, curriculum training, and the separation of training from inference. Its strong benchmark result is specific to synthetic positive-integer addition under the generator’s rules, with a 128-token context limit. It is not evidence of general mathematical reasoning, and broader out-of-distribution generalization remains untested.</p></section>
+          <details class="project-detail__sources">
+            <summary>Sources &amp; evaluation context</summary>
+            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
+            <ul><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/transformer_math_reasoning.ipynb" target="_blank" rel="noopener noreferrer">Training notebook and benchmark outputs ↗</a></li><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/predict.py" target="_blank" rel="noopener noreferrer">Standalone inference ↗</a></li><li><a href="https://github.com/JasonHonghzj/transformer-math-reasoning/blob/main/README.md" target="_blank" rel="noopener noreferrer">Project documentation ↗</a></li></ul>
+          </details>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/transformer-math-reasoning" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="project-butterfly" aria-labelledby="project-butterfly-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Deep Learning · Computer Vision</p>
+            <h2 id="project-butterfly-title">Butterfly Species Classification</h2>
+            <p class="project-detail__intro">Turning long-tailed butterfly observations into a practical image-classification workflow, from label engineering to probabilistic inference.</p>
+            <div class="project-detail__meta">
+              <div><span>Timeline</span><strong class="project-term">Fall 2025</strong></div>
+              <div><span>Skills</span><strong>Python, PyTorch, CNNs, CUDA AMP, Data Augmentation, Model Evaluation</strong></div>
+            </div>
+          </header>
+          <figure class="project-detail__cover">
+            <img src="assets/projects/butterfly.png" alt="Conceptual butterflies with image crops and layered visual features." width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A DS542 computer-vision project using iNaturalist-derived butterfly observations. The nine most frequent training species are modeled separately, while remaining species are grouped as Other, creating 10 target classes. The repository includes the training notebook, tabular metadata, processed labels, and test predictions, but not the full image collection.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Design and train a CNN from scratch, manage the long-tailed label distribution, and select a checkpoint using validation performance before producing class probabilities for unseen test images.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Explored class frequencies and constructed a shared top-nine-plus-Other label mapping for training and validation.</li><li>Implemented a custom PyTorch Dataset and DataLoaders, 224 × 224 RGB preprocessing, ImageNet normalization, and training-time augmentation.</li><li>Built five convolutional stages with batch normalization and ReLU, two max-pooling steps, a 256-to-64 channel bottleneck, and a 10-logit classifier.</li><li>Trained with Adam, cross-entropy loss, CUDA mixed precision, gradient clipping at 5.0, and early stopping after three epochs without validation-loss improvement.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The selected checkpoint at epoch 25 achieved 79.22% validation accuracy and 0.6141 validation loss.</li><li>At that checkpoint, training accuracy was 78.44% and training loss was 0.6391.</li><li>The inference workflow exports a probability for each of the 10 classes per test image. Test accuracy is not reported because test ground-truth labels are unavailable.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>This project connects data preparation, model architecture, GPU training, checkpoint selection, and inference in an end-to-end workflow. Grouping rare species into Other simplifies the task but limits fine-grained identification; class-specific evaluation and comparison with pretrained backbones are useful next steps, not completed results.</p></section>
+          <details class="project-detail__sources">
+            <summary>Sources &amp; evaluation context</summary>
+            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
+            <ul><li><a href="https://github.com/JasonHonghzj/butterfly-species-classification/blob/main/butterfly_classification.ipynb" target="_blank" rel="noopener noreferrer">Model, training, and recorded metrics ↗</a></li><li><a href="https://github.com/JasonHonghzj/butterfly-species-classification/blob/main/README.md" target="_blank" rel="noopener noreferrer">Project and dataset documentation ↗</a></li></ul>
+          </details>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/butterfly-species-classification" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="project-mahjong" aria-labelledby="project-mahjong-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Side Project · Scheduling</p>
+            <h2 id="project-mahjong-title">Mahjong Tournament Scheduler</h2>
+            <p class="project-detail__intro">A practical scheduling tool built for organizing Mahjong tournaments and playtesting with friends.</p>
+            <div class="project-detail__meta">
+              <div><span>Timeline</span><strong class="project-term">Summer 2026</strong></div>
+              <div><span>Skills</span><strong>Python, Tkinter, Heuristic Scheduling, Input Validation, pytest, CSV / JSON</strong></div>
+            </div>
+          </header>
+          <figure class="project-detail__cover">
+            <img src="assets/projects/mahjong.png" alt="Conceptual four-player Mahjong table connected to tournament schedule cards." width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption>AI-generated concept illustration · not an experimental result</figcaption>
+          </figure>
+          <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A Python application that turns a player list and required appearances into a validated sequence of four-player matches. It exposes a command-line interface, a Tkinter desktop interface, and a reusable Python API, using only the standard library at runtime.</p></section>
+          <section class="project-detail__panel"><h3>Objective</h3><p>Give every player the requested number of appearances, keep each match to four distinct participants, and reduce repeated pairings and consecutive appearances while making the schedule easy to review and export.</p></section>
+          <section class="project-detail__panel"><h3>Approach</h3><ul><li>Validated player names, equal appearance requirements, and divisibility of total player seats by four before generation.</li><li>Built candidate schedules with randomized, feasibility-aware selection from eligible four-player groups, penalizing repeated pairs and consecutive appearances.</li><li>Compared complete schedules using pair-frequency variance, maximum pair frequency, and consecutive appearances; retained the lowest-scoring valid candidate across multiple attempts.</li><li>Added seeded generation, player-by-player and pairing summaries, TXT / CSV / JSON exports, and tests covering constraints, reproducibility, validation, and export formats.</li></ul></section>
+          <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>The checked-in sample shows eight players appearing four times each across eight four-player matches, with a VALID validation result.</li><li>The application provides both desktop and command-line workflows, plus inspectable match lists and per-player appearance summaries.</li><li>The repository includes automated tests for schedule constraints, repeated-seed consistency, invalid input handling, and all three export formats; no tournament-scale performance benchmark is claimed.</li></ul></section>
+          <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The tool replaces manual schedule bookkeeping with reproducible generation and explicit validation. It is a randomized heuristic, not a guaranteed optimum: repeated four-player groups may occur, valid requests may exhaust the attempt limit, and large player pools can be slow. Its practical value is transparent scheduling support rather than a claim of perfect fairness.</p></section>
+          <details class="project-detail__sources">
+            <summary>Sources &amp; evaluation context</summary>
+            <p>Based on the repository’s documented implementation and saved outputs, reviewed October 21, 2026. Results were not independently rerun for this portfolio update.</p>
+            <ul><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/src/mahjong_match/generator.py" target="_blank" rel="noopener noreferrer">Scheduling algorithm ↗</a></li><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/examples/sample_output.txt" target="_blank" rel="noopener noreferrer">Example schedule ↗</a></li><li><a href="https://github.com/JasonHonghzj/Majhong_matcher/blob/main/tests/test_schedule.py" target="_blank" rel="noopener noreferrer">Validation and export tests ↗</a></li></ul>
+          </details>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/Majhong_matcher" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
         </div>
       </div>
     </dialog>
