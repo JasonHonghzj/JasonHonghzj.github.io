@@ -2,6 +2,21 @@
 
 The Epidemic card, technical tags, and workflow were subsequently refined using new source material. See [epidemic-project-update.md](epidemic-project-update.md) for that later update; its image prompts supersede the Epidemic cover entry below.
 
+## Project card palette — October 25, 2026
+
+The eight project cards use four coordinated low-saturation colors with shared text and tag styles. Portfolio Optimization now uses the mist variant instead of a permanently dark, white-text card. Dedicated card tokens keep this change separate from other green accents and the hero design.
+
+| Card palette | Light | Dark |
+| --- | --- | --- |
+| Sand | `#e8e3d8` | `#32372f` |
+| Clay | `#ecdfd4` | `#3b3029` |
+| Sage | `#e0e7dc` | `#2b3830` |
+| Mist | `#dfe7e5` | `#2c3638` |
+
+All cards use the theme's shared ink and muted text colors. Calculated contrast is at least 4.78:1 for descriptions and 11.21:1 for headings in light mode, and at least 6.83:1 for descriptions and 10.25:1 for headings in dark mode.
+
+Browser verification confirmed these computed colors and contrast values across all eight cards in both modes. Portfolio Optimization changes from light mist to dark mist with matching text colors; no horizontal page overflow was observed. The local preview was left in light mode for review.
+
 ## Implementation
 - Seven 3:2 photorealistic covers generated with built-in ImageGen; no CLI fallback.
 - All deployed image paths are under `assets/projects/*-realistic.png`.

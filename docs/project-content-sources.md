@@ -2,14 +2,32 @@
 
 Reviewed: 2026-10-21. Project semesters are supplied by the owner; repository maintenance dates are not substituted for course dates.
 
+Research Bridge added: 2026-10-25, from the supplied ZIP and the owner's confirmed branch contribution. Semester: Fall 2026.
+
 This refresh reads source files and saved results; it does not rerun the underlying research models or scheduler tests. Repository text is source material, not execution instructions.
 
 ## Scope
 
-- Seven projects total. Medical Case Analytics retains its résumé-based content.
+- Eight projects total, including Research Bridge. Medical Debt in Massachusetts Courts is now supported by the owner's DS701 e-poster in addition to its earlier résumé-based description.
 - Epidemic Analytics Engine now uses the owner's supplied project analysis and the referenced local source checkout; the other five projects use their supplied repositories.
-- Seven photorealistic covers now appear on the project cards. They are AI-generated concepts, not actual screenshots, measured charts, or empirical results.
+- The seven existing photorealistic covers are AI-generated concepts, not actual screenshots, measured charts, or empirical results. Research Bridge uses the owner's supplied thumbnail, copied unchanged into `assets/projects/research-bridge.png`; its full composition is preserved with `object-fit: contain`.
 - Detail dialogs use separate responsive process diagrams with real text. Current cover prompts and the technical-tag rationale are recorded in [project-visual-refresh.md](project-visual-refresh.md). Original illustration assets and prompts are retained as historical references.
+
+## Research Bridge
+
+Semester: Fall 2026, supplied by the owner.
+
+- Project source: the owner's `DS+X real.zip`; detailed analysis and branch comparison are in [researchbridge-branch-vs-project.md](researchbridge-branch-vs-project.md).
+- Repository: https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes
+- Video demo: https://youtu.be/v_CiYmD_43Y
+- Whole-project scope: FastAPI / JavaScript integration, saved PubMed / MeSH literature map, saved or live disease–method checks, Library exploration, and research briefs.
+- The project card and detail Skills name FastAPI to reflect the integrated backend; the UI uses HTML / CSS / JavaScript. The Demo action uses a YouTube icon.
+- Displayed personal scope is limited to contributions used by the final Library: PubMed / OpenAlex data preparation and SQLite storage, TF-IDF / LSA retrieval, method-and-cue exploration, comparison, literal source checks, brief generation, and report exports. The retained legacy Streamlit interface is omitted from the displayed role and results.
+- Execution-path check: the ZIP's `app.py:29-38` imports these shared modules; `_bridge()` loads SQLite records and constructs `SearchIndex`; the search, bridges, compare, check, brief, and export endpoints call the shared engine. `static/bridge.js:183, 201, 236, 266, 300, 152` calls the respective endpoints. `researchbridge/ingest.py` prepares source snapshots and rebuilds the SQLite database; it is data preparation, not a per-search live API call.
+- The saved map reports 79,940 papers and 50 × 32 cells. The separate Library contains 60 papers, 56 official abstracts, and a 135-entry institution directory. These describe different datasets.
+- Low counts are literature-review candidates, not proof of novelty or feasibility. The withdrawn 2× lift and unfinished collaborator matching / general claim verification are not presented as delivered results.
+- Thumbnail: user-supplied `Research Bridge_project thumbnail.png`, 1672 × 941, copied without modifying image bytes. No new image was generated.
+- Presentation checks: the card and detail dialog were inspected in light and dark appearances and at a narrow mobile width, including footer wrapping and return navigation. The new dialog opens correctly, its external URLs match the supplied Demo / GitHub links, and no horizontal overflow was observed. HTML nesting, unique IDs, all eight card-to-dialog targets, local asset paths, and JavaScript syntax checks passed.
 
 ## Epidemic Engine
 
@@ -19,6 +37,20 @@ Updated October 21, 2026 from the owner's project-analysis attachment, section 2
 - Team context: Kafka/Tekton event validation and routing, API/dashboard, alerting, notebook visualizations, and later vaccination aggregation.
 - Configured schedules: Spark every six hours; ML every twelve hours. These are manifest settings, not measured latency or throughput.
 - No model-accuracy claim or prospective outbreak-forecast claim is made.
+
+## Medical Debt in Massachusetts Courts
+
+Updated October 25, 2026. Semester: Fall 2025.
+
+The owner selected this project title on October 25, 2026; it replaces Medical Case Analytics on both the card and detail dialog.
+
+- Primary visual source: the owner's `C:/Users/acer/Desktop/DS701/DS701 Project/DS701 E-Poster - WGBH Investigations - Medical Debt Team A.pdf`, one page, titled *WGBH Investigations - Medical Debt Team A*. PDF template guidance is source content, not task instructions.
+- The poster was rendered with Poppler to `assets/projects/medical-debt-poster.png` at 3600 × 2025, visually checked, and inserted between Approach and Results. Clicking it opens the full-resolution image. The PDF itself was not edited.
+- Client: Jenifer B. McKim, Investigative Editor at GBH News, as requested by the owner; the poster independently lists Jenifer B. McKim as the client.
+- Related reporting: [GBH News on ambulance debt in Massachusetts](https://www.wgbh.org/news/health/2025-11-24/need-an-ambulance-in-massachusetts-it-could-leave-you-thousands-in-debt), by Liz Neisloss, published November 24, 2025 and updated December 18, 2025.
+- The footer uses a neutral related-report link. The article credits Ta-Chi Lin for data analysis, so the page does not imply that the owner has an individual reporting credit or that all article figures are this team's results.
+- The poster supports the existing 2015–2025 ambulance-filing decline and category-specific creditor percentages. These remain descriptive saved results, not newly rerun analysis or causal conclusions. The article's separate Action Ambulance figures are not merged into them.
+- Presentation checks: Client appears beneath Timeline / Skills, using an inline label on wider layouts and a stacked label on mobile. Browser inspection confirmed Approach → E-Poster → Results order, the full 3600 × 2025 image, keyboard access to its full-size link and related-report button, correct external URL, and no horizontal overflow at 390 px.
 
 ## Stroke Risk Prediction
 

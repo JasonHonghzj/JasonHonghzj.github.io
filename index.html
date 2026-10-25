@@ -231,6 +231,17 @@
         </div>
 
         <div class="project-grid">
+          <article class="project-card project-card--sage reveal">
+            <div class="project-topline"><span>Research Discovery &amp; Evidence Analysis</span></div>
+            <img class="project-cover project-cover--researchbridge" src="assets/projects/research-bridge.png" alt="Research Bridge: connect research questions to evidence through paper exploration, methods and bridges, paper comparison, and source verification." width="1672" height="941" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>Research Bridge</h3>
+              <p>A research discovery platform combining PubMed disease–method maps, publication-count checks, and a searchable paper Library with source excerpts, comparisons, and exportable research briefs.</p>
+              <ul><li>Python</li><li>Information Retrieval</li><li>FastAPI</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-researchbridge">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
           <article class="project-card project-card--lavender reveal">
             <div class="project-topline"><span>Data Engineering &amp; Applied ML</span></div>
             <img class="project-cover" src="assets/projects/epidemic-engine-cover-v3.png" alt="AI-generated concept: a synthetic epidemic analytics workspace with regional indicators, SQL tables, capacity signals, and anomaly analysis." width="1536" height="1024" loading="lazy" decoding="async" />
@@ -246,7 +257,7 @@
             <div class="project-topline"><span>Legal Data Analytics</span></div>
             <img class="project-cover" src="assets/projects/medical-realistic.png" alt="AI-generated concept: court-filing and medical-debt text analysis at a research workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
-              <h3>Medical Case Analytics</h3>
+              <h3>Medical Debt in Massachusetts Courts</h3>
               <p>A regex and fuzzy-matching pipeline transformed unstructured Massachusetts court filings into medical case categories and surfaced concentrated creditor behavior.</p>
               <ul><li>Regex</li><li>Fuzzy Matching</li><li>EDA</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-medical">View Project <span aria-hidden="true">→</span></button>
@@ -264,7 +275,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--ink reveal">
+          <article class="project-card project-card--mist reveal">
             <div class="project-topline"><span>Quantitative Finance</span></div>
             <img class="project-cover" src="assets/projects/portfolio-realistic.png" alt="AI-generated concept: quantitative equity research with allocation weights and risk–return analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -368,6 +379,87 @@
       </section>
     </main>
 
+    <dialog class="project-dialog" id="project-researchbridge" aria-labelledby="project-researchbridge-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Research Discovery &amp; Evidence Analysis</p>
+            <h2 id="project-researchbridge-title">Research Bridge</h2>
+            <p class="project-detail__intro">Connecting research questions to evidence through literature maps, reproducible PubMed checks, and a source-linked paper Library.</p>
+            <div class="project-detail__meta">
+              <div><span>Timeline</span><strong class="project-term">Fall 2026</strong></div>
+              <div><span>Skills</span><strong>Python, NLP / Information Retrieval, API Integration, SQLite, FastAPI</strong></div>
+            </div>
+          </header>
+          <figure class="project-flow" aria-labelledby="researchbridge-flow-title">
+            <figcaption class="project-flow__heading" id="researchbridge-flow-title"><span>Project at a glance</span>Map literature → check disease–method pairings → explore &amp; brief</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M7 18h34M7 29h34M18 7v34M29 7v34"/><circle cx="23.5" cy="23.5" r="3"/></svg></div>
+                <h3>Map literature</h3>
+                <ul><li>PubMed early-detection records</li><li>MeSH disease &amp; method categories</li><li>Explore publication coverage</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 39V10m0 29h32M16 34V22h8v12m7 0V12h8v22M14 9h9"/><path d="m28 7 4 4 8-8"/></svg></div>
+                <h3>Check pairings</h3>
+                <ul><li>Saved or live PubMed counts</li><li>Overall vs. early-detection studies</li><li>Inspect exact queries &amp; source status</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5h19l9 9v29H10zM29 5v10h9M16 23h16M16 29h16M16 35h10"/><path d="m29 36 3 3 7-7"/></svg></div>
+                <h3>Explore &amp; brief</h3>
+                <ul><li>Search the paper Library</li><li>Compare papers &amp; inspect excerpts</li><li>Export evidence and research briefs</li></ul>
+              </li>
+            </ol>
+            <dl class="project-facts">
+              <div><dt>Saved map papers</dt><dd>79,940</dd></div>
+              <div><dt>Disease × method grid</dt><dd>50 × 32</dd></div>
+              <div><dt>Library papers</dt><dd>60</dd></div>
+            </dl>
+            <p class="project-flow__note">The saved literature map and the curated Library are separate datasets. Low publication counts identify pairings for further reading; they do not establish scientific novelty or feasibility.</p>
+          </figure>
+          <section class="project-detail__panel">
+            <h3>Project Overview &amp; Description</h3>
+            <p>Research Bridge is a collaborative research discovery prototype for exploring how methods have been applied to diseases, with a focus on early detection. The integrated application brings together Check, Map, Library, Brief, and Method in a web platform with a FastAPI backend and an HTML, CSS, and JavaScript interface. Users can move from a broad view of publication coverage to a specific PubMed query, inspect related papers, and carry source-linked evidence into a research discussion.</p>
+            <p><strong>My role: Library Data &amp; Retrieval Engine.</strong> I developed the Library’s PubMed / OpenAlex data preparation and SQLite storage, TF-IDF / LSA retrieval, method-and-cue exploration, paper comparison, literal source checks, and research brief and report generation. These components support the Library features used in the final FastAPI application.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Objective</h3>
+            <p>Researchers often move between search tools, paper comparisons, source checks, and notes when exploring a question. An empty search result can also reflect limited coverage or query wording. The project aims to bring these tasks into one traceable workflow: map existing literature, compare publication counts for a disease–method pairing, inspect supporting text, and export a brief for further review.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Approach</h3>
+            <ul>
+              <li><strong>Map research coverage:</strong> Organize PubMed records with MeSH disease and method categories, presenting the saved early-detection literature snapshot as a disease–method matrix.</li>
+              <li><strong>Make publication checks reproducible:</strong> Compare overall publication counts for a pairing with counts specific to early detection. Show saved or live results, exact PubMed queries, and source status so users can inspect how each result was obtained.</li>
+              <li><strong>Build a traceable Library:</strong> Enrich paper records through PubMed and OpenAlex, retain source metadata and snapshots, and use SQLite with TF-IDF / LSA retrieval to support local search and methods-and-bridges exploration.</li>
+              <li><strong>Keep evidence inspectable:</strong> Show matching source excerpts, compare up to four papers using text similarity and shared terms, and check whether supplied text appears literally in selected abstracts. The Library supports Traditional Chinese, English, and Spanish interfaces.</li>
+              <li><strong>Support research handoffs:</strong> Export Library results as CSV, HTML, and PDF, and create a Gap Brief with the selected pairing, counts, and precise search queries for Markdown download or browser printing.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Results &amp; Key Findings</h3>
+            <ul>
+              <li>The saved map reports 79,940 early-detection papers across 50 diseases and 32 methods, providing 1,600 cells for exploring publication coverage.</li>
+              <li>The integrated workflow supports saved and live PubMed pairing checks, a disease–method map, an interactive Library, and downloadable research briefs.</li>
+              <li>The separate Library contains 60 papers, including 56 official abstracts, and a 135-entry institution directory, with source excerpts, comparison tools, and multilingual interaction.</li>
+              <li>Library search and exploration results retain source excerpts and PubMed links, giving users a direct route back to the underlying papers.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Impact &amp; Conclusion</h3>
+            <p>Research Bridge connects broad literature mapping with closer reading and reusable research notes. It gives researchers a practical way to investigate a pairing, inspect the evidence behind related papers, and share an explicit record of their search. My contribution provides the Library’s data, retrieval, source-text checking, and reporting functions within this workflow.</p>
+            <p>Publication counts and text similarity guide exploration. Literal source matching checks text presence; scientific quality, novelty, and feasibility require expert review.</p>
+          </section>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://youtu.be/v_CiYmD_43Y" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="1" y="4.5" width="22" height="15" rx="4.2" fill="#ff0000"/><path d="M10 8.5 16 12l-6 3.5Z" fill="#fff"/></svg><span>Watch Demo</span><span aria-hidden="true">↗</span></a>
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
+
     <dialog class="project-dialog" id="project-epidemic" aria-labelledby="project-epidemic-title">
       <div class="project-dialog__shell">
         <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
@@ -461,11 +553,15 @@
         <div class="project-detail">
           <header class="project-detail__header">
             <p class="project-detail__eyebrow">Legal Data Analytics</p>
-            <h2 id="project-medical-title">Medical Case Analytics</h2>
+            <h2 id="project-medical-title">Medical Debt in Massachusetts Courts</h2>
             <p class="project-detail__intro">A text-processing workflow that turns unstructured Massachusetts court filings into traceable medical-debt insights.</p>
             <div class="project-detail__meta">
               <div><span>Timeline</span><strong class="project-term">Fall 2025</strong></div>
               <div><span>Skills</span><strong>Python, Regex, Fuzzy Matching, EDA, Data Visualization</strong></div>
+              <div class="project-detail__client">
+                <span>Client</span>
+                <div><strong>Jenifer B. McKim</strong><p>Investigative Editor at GBH News</p></div>
+              </div>
             </div>
           </header>
           <figure class="project-flow" aria-labelledby="medical-flow-title">
@@ -492,9 +588,16 @@
           <section class="project-detail__panel"><h3>Project Overview &amp; Description</h3><p>A collaborative legal-data project exploring medical case categories in Massachusetts court filings. My contribution combined keyword identification, support for a regex and fuzzy-matching pipeline, and exploratory analysis of filing patterns across 2015–2025.</p></section>
           <section class="project-detail__panel"><h3>Objective</h3><p>Turn unstructured court records into analyzable medical case categories, then identify changes over time and concentrations in creditor activity.</p></section>
           <section class="project-detail__panel"><h3>Approach</h3><ul><li>Identified relevant keywords to support classification of medical cases.</li><li>Contributed to a regex and fuzzy-matching workflow for unstructured court records.</li><li>Compared filing trends across medical categories and examined each creditor’s share of cases.</li></ul></section>
+          <figure class="project-poster" aria-labelledby="medical-poster-caption">
+            <a class="project-poster__link" href="assets/projects/medical-debt-poster.png" target="_blank" rel="noopener noreferrer" aria-label="Open the medical debt project e-poster at full resolution">
+              <img src="assets/projects/medical-debt-poster.png" alt="WGBH Investigations Medical Debt Team A e-poster showing the data-processing workflow and findings on court filings, creditor concentration, case status, and resolution times." width="3600" height="2025" loading="lazy" decoding="async" />
+            </a>
+            <figcaption id="medical-poster-caption"><strong>Project E-Poster</strong><span>Click to view full size <span aria-hidden="true">↗</span></span></figcaption>
+          </figure>
           <section class="project-detail__panel"><h3>Results &amp; Key Findings</h3><ul><li>Ambulance-related cases declined by 96% over 2015–2025, while other medical categories remained stable.</li><li>Trinity EMS accounted for 60% of ambulance cases.</li><li>MSPCA Angell represented 91% of veterinary filings.</li></ul></section>
           <section class="project-detail__panel"><h3>Impact &amp; Conclusion</h3><p>The analysis made category-specific trends and creditor concentration visible within a large collection of court records. These descriptive findings provide a clearer starting point for further investigation; filing patterns alone do not establish their causes.</p></section>
           <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://www.wgbh.org/news/health/2025-11-24/need-an-ambulance-in-massachusetts-it-could-leave-you-thousands-in-debt" target="_blank" rel="noopener noreferrer" aria-label="Read related GBH News reporting on ambulance debt in Massachusetts"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" fill="none"/><path d="M7 7h10M7 11h4v5H7zM15 11h2M15 15h2M7 18h10" fill="none"/></svg><span>Read GBH Report</span><span aria-hidden="true">↗</span></a>
             <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
           </footer>
         </div>

@@ -12,6 +12,10 @@
   --glass: #faf7f1ed;
   --project-ink: #2c392e;
   --project-ink-text: #f6f2e9;
+  --project-card-sand: #e8e3d8;
+  --project-card-clay: #ecdfd4;
+  --project-card-sage: #e0e7dc;
+  --project-card-mist: #dfe7e5;
   --portrait-frame: #c4d0b9;
   --portrait-line: #f6f2e99e;
   --portrait-shadow: #25302724;
@@ -37,6 +41,10 @@ html[data-theme="dark"] {
   --glass: #202820ed;
   --project-ink: #304235;
   --project-ink-text: #f0ebdf;
+  --project-card-sand: #32372f;
+  --project-card-clay: #3b3029;
+  --project-card-sage: #2b3830;
+  --project-card-mist: #2c3638;
   --portrait-frame: #40543e;
   --portrait-line: #b5c8a673;
   --portrait-shadow: #00000040;
@@ -717,7 +725,8 @@ h2 {
   flex-direction: column;
   border-radius: 22px;
   overflow: hidden;
-  transition: transform 260ms ease, box-shadow 260ms ease;
+  color: var(--ink);
+  transition: transform 260ms ease, box-shadow 260ms ease, background-color 260ms ease, color 260ms ease;
 }
 
 .project-card:hover {
@@ -725,10 +734,10 @@ h2 {
   box-shadow: 0 26px 70px rgba(56, 42, 37, 0.12);
 }
 
-.project-card--lavender { background: var(--lavender); }
-.project-card--peach { background: var(--peach); }
-.project-card--sage { background: var(--sage); }
-.project-card--ink { background: var(--project-ink); color: var(--project-ink-text); }
+.project-card--lavender { background: var(--project-card-sand); }
+.project-card--peach { background: var(--project-card-clay); }
+.project-card--sage { background: var(--project-card-sage); }
+.project-card--mist { background: var(--project-card-mist); }
 
 .project-topline {
   display: flex;
@@ -752,6 +761,11 @@ h2 {
   margin: 22px 0;
   border-radius: 14px;
   flex-shrink: 0;
+}
+
+.project-cover--researchbridge {
+  object-fit: contain;
+  background: #edf7fc;
 }
 
 .project-graphic--stream {
@@ -924,10 +938,6 @@ h2 {
   line-height: 1.5;
 }
 
-.project-card--ink .project-copy > p {
-  color: rgba(255, 255, 255, 0.68);
-}
-
 .project-copy ul {
   margin: 20px 0 0;
 }
@@ -965,10 +975,6 @@ h2 {
 .project-dialog__close:focus-visible {
   outline: 3px solid var(--peach-deep);
   outline-offset: 4px;
-}
-
-.project-card--ink .project-copy li {
-  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .education {
@@ -1257,6 +1263,48 @@ h2 {
   font-weight: 500;
 }
 
+.project-detail__client {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--project-card-sand) 35%, var(--paper));
+}
+
+.project-detail__client > span { padding-top: 4px; }
+.project-detail__client strong { margin-top: 0; }
+.project-detail__client p { margin: 3px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+
+.project-poster {
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.project-poster__link { display: block; background: #fff; cursor: zoom-in; }
+.project-poster__link:focus-visible { outline: 3px solid var(--peach-deep); outline-offset: -3px; }
+.project-poster img { width: 100%; height: auto; }
+.project-poster figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 18px;
+  padding: 13px 18px;
+  color: var(--muted);
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.project-poster figcaption strong { color: var(--ink); font-weight: 500; }
+
 /* Accessible, responsive process diagrams use real text rather than text in images. */
 .project-flow {
   margin: 34px 0 24px;
@@ -1422,7 +1470,8 @@ html[data-theme="dark"] .project-flow--epidemic .project-flow__step:nth-child(4)
 .project-facts dd { margin: 0; color: var(--ink); font-size: clamp(1.25rem, 3vw, 1.8rem); font-weight: 600; line-height: 1.2; }
 .project-flow__note { margin: 15px 0 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
 
-#project-epidemic .project-detail__panel p + p { margin-top: 14px; }
+#project-epidemic .project-detail__panel p + p,
+#project-researchbridge .project-detail__panel p + p { margin-top: 14px; }
 
 .indicator-list { margin: 20px 0; }
 .indicator-list > div { display: grid; grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.5fr); gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--line); }
@@ -1695,6 +1744,8 @@ html:has(.project-dialog[open]) {
   .project-dialog__shell { max-height: calc(100vh - 18px); }
   .project-detail { padding: 4px 16px 34px; }
   .project-detail__meta { grid-template-columns: 1fr; gap: 16px; }
+  .project-detail__client { grid-template-columns: 1fr; gap: 6px; padding: 16px; }
+  .project-detail__client > span { padding-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
