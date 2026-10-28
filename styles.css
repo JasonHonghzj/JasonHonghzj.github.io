@@ -571,9 +571,17 @@ h2 {
   margin: 40px 0 0;
 }
 
+.about-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.9fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 72px);
+}
+
 .about-text {
   display: grid;
   gap: 24px;
+  min-width: 0;
   color: var(--muted);
   font-size: clamp(1.25rem, 1.7vw, 1.4rem);
   line-height: 1.65;
@@ -582,6 +590,94 @@ h2 {
 .about-text p {
   margin: 0;
   max-width: 78ch;
+}
+
+.about-method {
+  min-width: 0;
+  padding-left: clamp(24px, 3vw, 40px);
+  border-left: 1px solid var(--line);
+}
+
+.about-method__eyebrow {
+  margin: 0 0 9px;
+  color: var(--peach-deep);
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.about-method h3 {
+  margin: 0 0 28px;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.2vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.work-steps {
+  display: grid;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.work-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  bottom: -26px;
+  left: 21.5px;
+  width: 1px;
+  background: var(--line);
+}
+
+.work-step__icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--peach-deep);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+.work-step__icon svg { width: 21px; height: 21px; }
+
+.work-step h4 {
+  margin: 4px 0 6px;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.work-step p {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .about-overview { grid-template-columns: 1fr; gap: 34px; }
+  .about-method { padding: 30px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .work-steps { max-width: 480px; }
 }
 
 .about-skills {

@@ -44,8 +44,8 @@
       <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
         <a class="nav-resume" href="assets/resume-zhi-jun-hong.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
@@ -101,13 +101,45 @@
           <h2 class="section-index" id="about-title">About Me</h2>
         </div>
         <div class="about-content reveal" data-delay="100">
-          <div class="about-text">
-            <p>
-              I'm a master's student in Data Science at Boston University, with a background in Statistics and FinTech from National Cheng Kung University. My interests center on data analysis, AI and machine learning, probability and statistics, and financial portfolio optimization. Coursework in Deep Learning for Data Science, Multivariate Analysis, Regression Analysis, Analysis of Time Series, and Introduction to Mathematical Finance has shaped how I approach these problems.
-            </p>
-            <p>
-              I enjoy working through a problem from preparing messy data and testing models to explaining what the results mean. My projects range from Kafka and Spark data pipelines and healthcare risk prediction to LSTM forecasting and Black–Litterman portfolio optimization. Throughout that process, I pay attention to data quality, model performance, and the business context behind each decision, aiming to turn complex findings into clear, practical recommendations.
-            </p>
+          <div class="about-overview">
+            <div class="about-text">
+              <p>
+                I'm a master's student in Data Science at Boston University, with a background in Statistics and FinTech from National Cheng Kung University. My interests center on data analysis, AI and machine learning, probability and statistics, and financial portfolio optimization. Coursework in Deep Learning for Data Science, Multivariate Analysis, Regression Analysis, Analysis of Time Series, and Introduction to Mathematical Finance has shaped how I approach these problems.
+              </p>
+              <p>
+                I enjoy working through a problem from preparing messy data and testing models to explaining what the results mean. My projects range from Kafka and Spark data pipelines and healthcare risk prediction to LSTM forecasting and Black–Litterman portfolio optimization. Throughout that process, I pay attention to data quality, model performance, and the business context behind each decision, aiming to turn complex findings into clear, practical recommendations.
+              </p>
+            </div>
+            <aside class="about-method" aria-labelledby="work-method-title">
+              <p class="about-method__eyebrow">My approach</p>
+              <h3 id="work-method-title">How I Work</h3>
+              <ol class="work-steps">
+                <li class="work-step">
+                  <span class="work-step__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 4 16 4 16 0V5M4 12v7c0 4 16 4 16 0v-7"/></svg>
+                  </span>
+                  <div><h4>Prepare Data</h4><p>Clean, structure, and explore.</p></div>
+                </li>
+                <li class="work-step">
+                  <span class="work-step__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="3" width="5" height="5" rx="1"/><rect x="16" y="3" width="5" height="5" rx="1"/><rect x="9.5" y="16" width="5" height="5" rx="1"/><path d="M8 5.5h8M5.5 8 12 16l6.5-8M12 5.5V16"/></svg>
+                  </span>
+                  <div><h4>Build Models</h4><p>Test analytical and ML approaches.</p></div>
+                </li>
+                <li class="work-step">
+                  <span class="work-step__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 3v17h17M8 15l4-5 4 2 5-7M17 5h4v4M8 18v-3m4 3v-8m4 8v-6"/></svg>
+                  </span>
+                  <div><h4>Evaluate</h4><p>Check performance and assumptions.</p></div>
+                </li>
+                <li class="work-step">
+                  <span class="work-step__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 11V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l4 4v-4h2M6 7h10M6 11h6"/><path d="M15 13h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1v2l-3-2h-2a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/></svg>
+                  </span>
+                  <div><h4>Communicate Insights</h4><p>Turn findings into clear recommendations.</p></div>
+                </li>
+              </ol>
+            </aside>
           </div>
           <section class="about-skills" aria-labelledby="skills-title">
             <h3 id="skills-title">My Skills</h3>
@@ -150,78 +182,6 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
-
-      <section class="section experience" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading reveal">
-          <h2 class="section-index" id="experience-title">Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Market Research Intern</h3>
-              <p class="company">Eastern Online Co., Ltd.</p>
-              <p class="role-date">Jun 2024 — Oct 2024</p>
-              <span>Taipei, Taiwan</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Cleaned and validated 1,000+ machine-generated records to improve downstream data quality.</li>
-                <li>Helped streamline model-assisted data workflows, reducing processing time by 25%.</li>
-                <li>Translated Tableau analysis into clear recommendations on market opportunities.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Financial Research &amp; Product Design</h3>
-              <p class="company">FinTech Digital Sandbox Competition</p>
-              <p class="role-date">Jul 2023 — Nov 2023</p>
-              <span>Taipei, Taiwan</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Researched financial inclusion policies, government incentives, and existing green finance products to identify financing gaps for SMEs and agricultural businesses.</li>
-                <li>Analyzed historical green bond issuance and lending data, alongside 25 SME low-carbon transition cases from 2018–2022, to inform product design.</li>
-                <li>Designed a proposed NT$1 billion green financing program, specifying a 5-year bond tenor, a 1.75% coupon, and an initial 2.375% loan rate based on 2023 benchmarks.</li>
-                <li>Developed a three-stage loan disbursement framework, performance-based interest subsidies, and broker incentives to support the proposed financing program.</li>
-                <li>Modeled annual loan interest income of NT$23.75 million and bond interest expense of NT$17.5 million; created financial charts, a SWOT analysis, and product documentation to communicate the proposal’s feasibility.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Research Assistant</h3>
-              <p class="company">National Cheng Kung University</p>
-              <p class="role-date">Sep 2022 — Jul 2023</p>
-              <span>Tainan, Taiwan</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Organized research data and documentation to support accurate, complete submissions.</li>
-                <li>Built R visualizations and structured analytical outputs in LaTeX for clearer communication.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Event Planning &amp; Experience Design</h3>
-              <p class="company">AIESEC at National Cheng Kung University</p>
-              <p class="role-date">Sep 2021 — Jan 2022</p>
-              <span>Tainan, Taiwan</span>
-            </div>
-            <div class="timeline-body">
-              <ul>
-                <li>Designed an interactive Gather Town environment to introduce AIESEC’s mission and core values and facilitate participant interaction.</li>
-                <li>Collaborated with team members on event planning, contributing to discussions on activity concepts and arrangements.</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -316,6 +276,78 @@
               <p>A desktop and command-line tool for balanced four-player schedules, with seeded generation, validation, pairing reports, and TXT / CSV / JSON export.</p>
               <ul><li>Python</li><li>Heuristic Search</li><li>Tkinter</li></ul>
               <button class="project-link" type="button" data-project-dialog="project-mahjong">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <h2 class="section-index" id="experience-title">Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Market Research Intern</h3>
+              <p class="company">Eastern Online Co., Ltd.</p>
+              <p class="role-date">Jun 2024 — Oct 2024</p>
+              <span>Taipei, Taiwan</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Cleaned and validated 1,000+ machine-generated records to improve downstream data quality.</li>
+                <li>Helped streamline model-assisted data workflows, reducing processing time by 25%.</li>
+                <li>Translated Tableau analysis into clear recommendations on market opportunities.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Financial Research &amp; Product Design</h3>
+              <p class="company">FinTech Digital Sandbox Competition</p>
+              <p class="role-date">Jul 2023 — Nov 2023</p>
+              <span>Taipei, Taiwan</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Researched financial inclusion policies, government incentives, and existing green finance products to identify financing gaps for SMEs and agricultural businesses.</li>
+                <li>Analyzed historical green bond issuance and lending data, alongside 25 SME low-carbon transition cases from 2018–2022, to inform product design.</li>
+                <li>Designed a proposed NT$1 billion green financing program, specifying a 5-year bond tenor, a 1.75% coupon, and an initial 2.375% loan rate based on 2023 benchmarks.</li>
+                <li>Developed a three-stage loan disbursement framework, performance-based interest subsidies, and broker incentives to support the proposed financing program.</li>
+                <li>Modeled annual loan interest income of NT$23.75 million and bond interest expense of NT$17.5 million; created financial charts, a SWOT analysis, and product documentation to communicate the proposal’s feasibility.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Research Assistant</h3>
+              <p class="company">National Cheng Kung University</p>
+              <p class="role-date">Sep 2022 — Jul 2023</p>
+              <span>Tainan, Taiwan</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Organized research data and documentation to support accurate, complete submissions.</li>
+                <li>Built R visualizations and structured analytical outputs in LaTeX for clearer communication.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Event Planning &amp; Experience Design</h3>
+              <p class="company">AIESEC at National Cheng Kung University</p>
+              <p class="role-date">Sep 2021 — Jan 2022</p>
+              <span>Tainan, Taiwan</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Designed an interactive Gather Town environment to introduce AIESEC’s mission and core values and facilitate participant interaction.</li>
+                <li>Collaborated with team members on event planning, contributing to discussions on activity concepts and arrangements.</li>
+              </ul>
             </div>
           </article>
         </div>
