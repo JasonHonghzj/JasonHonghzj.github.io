@@ -32,3 +32,13 @@ GitHub will publish the site at `https://<username>.github.io/<repository>/`.
 - `script.js` — mobile menu, active navigation, and scroll reveal effects
 - `assets/resume-zhi-jun-hong.pdf` — downloadable résumé
 - `assets/headshot.png` — homepage portrait
+
+## Stylesheet cache updates
+
+The stylesheet link in `index.html` includes a content version (`styles.css?v=...`). After changing `styles.css`, refresh that version using the first 12 characters of its SHA-256 hash so existing browser sessions request the updated styles:
+
+```powershell
+(Get-FileHash -LiteralPath styles.css -Algorithm SHA256).Hash.ToLowerInvariant().Substring(0, 12)
+```
+
+How I Work SVGs also declare intrinsic width and height so an older or unavailable stylesheet cannot make them expand to the browser's default SVG size.
