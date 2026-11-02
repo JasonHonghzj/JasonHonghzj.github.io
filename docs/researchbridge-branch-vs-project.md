@@ -1,4 +1,27 @@
-# ResearchBridge：個人 Branch 與完整專案交叉分析
+# ResearchBridge：個人 Branch 與完整專案交叉分析（歷史資料）
+
+> **Historical notes — not the current main version.** 第 1–8 節保留 2026-10-25 個人 branch／ZIP 比較，包含當時的 79,940／533／424 數字、Streamlit 保留情況與當時驗證限制；不是目前 main 的檔案清單或現行作品集文案。現行英文與中文文案見 [researchbridge-portfolio-copy.md](researchbridge-portfolio-copy.md)。
+
+## 2026-11-02 現行版本註記
+
+依使用者提供的 2026-11-02（America/New_York）一致性檢查，現行基準固定到 [main e90c408](https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes/commit/e90c408f3e40f633d7b2cd23909ec977cb0488d6)：
+
+- 保存地圖為 **80,025 筆 PubMed 記錄、50 疾病 × 32 方法**，發表年份 2005–2026；資料於 2026-10-30 擷取，2026-11-02 提升為預設快照。不能描述成 11 月 2 日重新擷取全部文獻，也不能因舊完整 corpus／PMID 清單缺失而推定「只新增 85 篇」。
+- **534** 組原本為空的地圖格有保存的配對確認計數，**425** 組符合 early-detection 結果 ≤2 筆的候選門檻；其中 **533** 組沿用無逐組時間戳的歷史快取，另 **1** 組在 2026-10-30 建置時新查詢。不是全地圖 1,600 格都重新查詢，也不是已驗證的研究發現。
+- Map 與 Library 為不同資料集；Library 仍為 **60 篇文獻、56 篇官方摘要、135 筆機構名錄**，不是整體地圖的本地全文檢索。
+- 目前主介面為 FastAPI 與 HTML／CSS／JavaScript。Streamlit 程式、設定及專用測試已移除；以下個人 branch 與 ZIP 的 Streamlit／AppTest 對照只供歷史歸屬查閱。
+- 現行個人角色限於 Library Data & Retrieval Engine，brief 明確指 **Library opportunity brief**；不將整套 Gap Brief 的作者歸屬擴大到個人。
+- 來源核對是正規化後選定摘要的字面子字串比對，未命中須人工檢視；Method 頁固定腳本示例與此分開，不是一般科學真偽驗證。三語支援限 Library 介面，題名與摘要保留原文。
+- 原 **2× lift 維持撤回**，科學成效為 `pending_remeasurement`。目前已有 **171 matched pairs** 的回溯分析，但不支持恢復 2×；使用當前 MeSH 標註也不等同 as-of-2018 的前瞻驗證。這更新了下文當時「驗證尚未完成」的狀態，沒有恢復原成效主張。
+- 2026-10-24 發布的示範影片展示較早的 79,940-record 快照；網站需標示歷史版本，不能當成新版成果。沒有完整逐秒審核或重錄影片。
+
+來源：[現行 snapshot](https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes/blob/e90c408f3e40f633d7b2cd23909ec977cb0488d6/data/snapshot.json#L3-L24)、[README](https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes/blob/e90c408f3e40f633d7b2cd23909ec977cb0488d6/README.md#L19-L82)、[Verification 與評估限制](https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes/blob/e90c408f3e40f633d7b2cd23909ec977cb0488d6/docs/VERIFICATION.md#L3-L57)、[Library 來源核對／brief](https://github.com/JasonHonghzj/ResearchBrdige_2026Hackachusettes/blob/e90c408f3e40f633d7b2cd23909ec977cb0488d6/researchbridge/discovery.py#L98-L137)。
+
+本次更新採用所提供的來源核對結果，沒有重新抓取完整 PubMed 語料、重跑科學成效評估或完整應用測試；沒有重建全部協作歷史。抽樣重取 60 個 PMID 的標題／MeSH IDs 吻合，也不代表全部 80,025 筆或全部摘要均已人工確認。以下歷史檔案比對結論不擴張成現行檔案逐一重驗。
+
+---
+
+## 歷史分析原文：2026-10-25
 
 分析日期：2026-10-25。網站頁面未修改；本文整理程式證據及作品集表述範圍。
 
