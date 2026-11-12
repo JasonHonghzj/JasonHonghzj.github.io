@@ -27,8 +27,8 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@1,400&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=d0330ec1ad71" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3f8e780adec1" />
+    <script src="script.js?v=5e2e12beefc9" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -188,10 +188,17 @@
       <section class="section projects" id="projects" aria-labelledby="projects-title">
         <div class="projects-heading reveal">
           <h2 class="section-index" id="projects-title">Projects</h2>
+          <div class="project-filters" role="group" aria-label="Filter projects" data-project-filters hidden>
+            <button class="project-filter" type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-grid">All <span class="project-filter__count"></span></button>
+            <button class="project-filter" type="button" data-project-filter="machine-learning" aria-pressed="false" aria-controls="project-grid">Machine Learning <span class="project-filter__count"></span></button>
+            <button class="project-filter" type="button" data-project-filter="data-analytics" aria-pressed="false" aria-controls="project-grid">Data &amp; Analytics <span class="project-filter__count"></span></button>
+            <button class="project-filter" type="button" data-project-filter="tools-applications" aria-pressed="false" aria-controls="project-grid">Tools &amp; Applications <span class="project-filter__count"></span></button>
+            <p class="project-filter-status" role="status"></p>
+          </div>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-card--sage reveal">
+        <div class="project-grid" id="project-grid">
+          <article class="project-card project-card--sage reveal" data-project-category="tools-applications">
             <div class="project-topline"><span>Research Discovery &amp; Evidence Analysis</span></div>
             <img class="project-cover project-cover--researchbridge" src="assets/projects/research-bridge-v2.png" alt="Research Bridge concept illustration: explore papers, inspect method and cue associations, compare papers, and check literal text in selected source abstracts." width="1672" height="941" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -202,7 +209,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--lavender reveal">
+          <article class="project-card project-card--lavender reveal" data-project-category="data-analytics">
             <div class="project-topline"><span>Data Engineering &amp; Applied ML</span></div>
             <img class="project-cover" src="assets/projects/epidemic-engine-cover-v3.png" alt="AI-generated concept: a synthetic epidemic analytics workspace with regional indicators, SQL tables, capacity signals, and anomaly analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -213,7 +220,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--peach reveal" data-delay="80">
+          <article class="project-card project-card--peach reveal" data-project-category="data-analytics" data-delay="80">
             <div class="project-topline"><span>Legal Data Analytics</span></div>
             <img class="project-cover" src="assets/projects/medical-realistic.png" alt="AI-generated concept: court-filing and medical-debt text analysis at a research workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -224,7 +231,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--sage reveal">
+          <article class="project-card project-card--sage reveal" data-project-category="machine-learning">
             <div class="project-topline"><span>Healthcare Machine Learning</span></div>
             <img class="project-cover" src="assets/projects/stroke-realistic.png" alt="AI-generated concept: symptom-data heatmap, patient clusters, and prediction evaluation on a health analytics monitor." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -235,7 +242,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--mist reveal">
+          <article class="project-card project-card--mist reveal" data-project-category="data-analytics">
             <div class="project-topline"><span>Quantitative Finance</span></div>
             <img class="project-cover" src="assets/projects/portfolio-realistic.png" alt="AI-generated concept: quantitative equity research with allocation weights and risk–return analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -246,7 +253,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--lavender reveal">
+          <article class="project-card project-card--lavender reveal" data-project-category="machine-learning">
             <div class="project-topline"><span>Deep Learning · Sequence Modeling</span></div>
             <img class="project-cover" src="assets/projects/transformer-realistic.png" alt="AI-generated concept: arithmetic token sequences and an attention matrix on a deep-learning workstation." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -257,7 +264,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--sage reveal">
+          <article class="project-card project-card--sage reveal" data-project-category="machine-learning">
             <div class="project-topline"><span>Deep Learning · Computer Vision</span></div>
             <img class="project-cover" src="assets/projects/butterfly-realistic.png" alt="AI-generated concept: detailed butterfly photographs and computer-vision feature analysis." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">
@@ -268,7 +275,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--peach reveal">
+          <article class="project-card project-card--peach reveal" data-project-category="tools-applications">
             <div class="project-topline"><span>Side Project · Scheduling</span></div>
             <img class="project-cover" src="assets/projects/mahjong-realistic.png" alt="AI-generated concept: real Mahjong tiles beside a tournament scheduling interface." width="1536" height="1024" loading="lazy" decoding="async" />
             <div class="project-copy">

@@ -6,6 +6,7 @@ const sections = [...document.querySelectorAll("main section[id]")];
 const reveals = document.querySelectorAll(".reveal");
 const themeToggle = document.querySelector(".theme-toggle");
 const themeColor = document.querySelector('meta[name="theme-color"]');
+const projectFilters = document.querySelector("[data-project-filters]");
 const projectTriggers = document.querySelectorAll("[data-project-dialog]");
 const projectDialogs = document.querySelectorAll(".project-dialog");
 const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -95,6 +96,33 @@ systemTheme.addEventListener("change", (event) => {
 
 updateThemeControl();
 
+if (projectFilters) {
+  const cards = [...document.querySelectorAll("#project-grid .project-card")];
+  const buttons = projectFilters.querySelectorAll("[data-project-filter]");
+  const status = projectFilters.querySelector('[role="status"]');
+
+  buttons.forEach((button) => {
+    const category = button.dataset.projectFilter;
+    const label = button.textContent.trim();
+    const matchingCards = cards.filter((card) => category === "all" || card.dataset.projectCategory === category);
+    button.querySelector(".project-filter__count").textContent = matchingCards.length;
+
+    button.addEventListener("click", () => {
+      if (button.getAttribute("aria-pressed") === "true") return;
+
+      buttons.forEach((filter) => filter.setAttribute("aria-pressed", String(filter === button)));
+      cards.forEach((card) => {
+        card.hidden = !matchingCards.includes(card);
+      });
+      status.textContent = category === "all"
+        ? `Showing all ${matchingCards.length} projects.`
+        : `Showing ${matchingCards.length} projects in ${label}.`;
+    });
+  });
+
+  projectFilters.hidden = false;
+}
+
 projectTriggers.forEach((trigger) => {
   trigger.setAttribute("aria-haspopup", "dialog");
   trigger.setAttribute("aria-controls", trigger.dataset.projectDialog);
@@ -113,6 +141,7 @@ projectDialogs.forEach((dialog) => {
       dialog.close();
       if (button.hasAttribute("data-back-projects")) {
         document.getElementById("projects")?.scrollIntoView({ behavior: "instant", block: "start" });
+        projectFilters?.querySelector('[aria-pressed="true"]')?.focus({ preventScroll: true });
       }
     });
   });
