@@ -260,10 +260,11 @@ html[data-theme="dark"] .theme-icon--moon {
 }
 
 .hero {
+  --portrait-size: 338px;
   min-height: 100svh;
   padding: calc(var(--header-height) + 70px) clamp(22px, 5vw, 76px) 72px;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(var(--portrait-size), 0.8fr);
   gap: clamp(50px, 7vw, 110px);
   align-items: center;
   max-width: 1500px;
@@ -378,13 +379,16 @@ h2 em {
 .hero-visual {
   position: relative;
   justify-self: end;
-  width: min(100%, 260px);
+  width: min(100%, var(--portrait-size));
+  /* Close the remaining gap after the wider portrait moves its left edge inward. */
+  margin-inline-end: clamp(0px, calc(30vw - 381px), 68px);
   min-width: 0;
 }
 
 .photo-frame {
+  --frame-rim: 15.6px;
   position: relative;
-  padding: 12px;
+  padding: var(--frame-rim);
   background: var(--portrait-frame);
   border-radius: 50%;
   box-shadow: 0 25px 80px var(--portrait-shadow);
@@ -395,7 +399,7 @@ h2 em {
 .photo-frame::before {
   content: "";
   position: absolute;
-  inset: 12px;
+  inset: var(--frame-rim);
   z-index: 2;
   border: 1px solid var(--portrait-line);
   border-radius: inherit;
@@ -418,7 +422,6 @@ h2 em {
 }
 
 .photo-frame img.headshot {
-  /* A smaller circular frame keeps the subject close to the previous scale. */
   display: block;
   object-position: center;
 }
@@ -1685,7 +1688,7 @@ html:has(.project-dialog[open]) {
   .theme-toggle { width: 38px; height: 38px; margin-left: 12px; }
 
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) minmax(var(--portrait-size), 0.8fr);
     gap: 38px;
   }
 
@@ -1786,10 +1789,11 @@ html:has(.project-dialog[open]) {
   .hero {
     padding-top: 130px;
     grid-template-columns: 1fr;
+    gap: 26px;
   }
 
   h1 { font-size: clamp(3rem, 9vw, 5rem); }
-  .hero-visual { justify-self: center; width: min(72vw, 260px); }
+  .hero-visual { justify-self: center; }
 
   .section-heading,
   .timeline-item {
@@ -1813,7 +1817,6 @@ html:has(.project-dialog[open]) {
   .section-index { font-size: clamp(2rem, 10vw, 2.6rem); }
 
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
-  .hero-visual { width: min(78vw, 260px); }
   .skill-groups { grid-template-columns: 1fr; gap: 24px; }
   .timeline-body { padding-right: 0; }
   .role-number { display: none; }
