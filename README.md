@@ -14,7 +14,7 @@ Then visit `http://localhost:8000`.
 
 ## Personal photo
 
-The homepage portrait is stored at `assets/headshot.png`. The layout uses `object-fit: cover` and a custom focal position so the landscape photo remains well composed inside the portrait frame on responsive layouts.
+The homepage portrait is stored as a square PNG with transparency at `assets/headshot.png`. The circular photo window uses `--portrait-backdrop` for the background in both themes.
 
 ## Deploy with GitHub Pages
 

@@ -17,6 +17,7 @@
   --project-card-sage: #e0e7dc;
   --project-card-mist: #dfe7e5;
   --portrait-frame: #c4d0b9;
+  --portrait-backdrop: #98aab4;
   --portrait-line: #f6f2e99e;
   --portrait-shadow: #25302724;
   --font-body: "EB Garamond", Georgia, serif;
@@ -406,6 +407,7 @@ h2 em {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: inherit;
+  background-color: var(--portrait-backdrop);
 }
 
 .photo-frame img {
