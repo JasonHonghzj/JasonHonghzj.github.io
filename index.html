@@ -27,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@1,400&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3f8e780adec1" />
+    <link rel="stylesheet" href="styles.css?v=d9e7281793c5" />
     <script src="script.js?v=5e2e12beefc9" defer></script>
   </head>
   <body>
@@ -198,6 +198,17 @@
         </div>
 
         <div class="project-grid" id="project-grid">
+          <article class="project-card project-card--mist reveal" data-project-category="data-analytics">
+            <div class="project-topline"><span>Data Engineering &amp; Urban Mobility</span></div>
+            <img class="project-cover" src="assets/projects/nyc-taxi-cover.jpg" alt="A yellow taxi crosses a Manhattan intersection lined with tall buildings." width="4201" height="2790" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>NYC Yellow Taxi Analytics</h3>
+              <p>A PySpark pipeline and Streamlit dashboard for exploring New York City yellow taxi trips, from pickup hotspots and hourly activity to fares and payment patterns.</p>
+              <ul><li>PySpark</li><li>PostgreSQL</li><li>Streamlit</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-nyc-taxi">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
           <article class="project-card project-card--sage reveal" data-project-category="tools-applications">
             <div class="project-topline"><span>Research Discovery &amp; Evidence Analysis</span></div>
             <img class="project-cover project-cover--researchbridge" src="assets/projects/research-bridge-v2.png" alt="Research Bridge concept illustration: explore papers, inspect method and cue associations, compare papers, and check literal text in selected source abstracts." width="1672" height="941" loading="lazy" decoding="async" />
@@ -417,6 +428,82 @@
         </div>
       </section>
     </main>
+
+    <dialog class="project-dialog" id="project-nyc-taxi" aria-labelledby="project-nyc-taxi-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Data Engineering &amp; Urban Mobility</p>
+            <h2 id="project-nyc-taxi-title">NYC Yellow Taxi Analytics</h2>
+            <p class="project-detail__intro">A local analytics pipeline that turns NYC Taxi &amp; Limousine Commission trip records into a dashboard for exploring where and when people ride and what passengers pay.</p>
+            <div class="project-detail__meta">
+              <div><span>Timeline</span><strong class="project-term">Fall 2026</strong></div>
+              <div><span>Skills</span><strong>Python, PySpark, PostgreSQL, Streamlit, Podman Compose</strong></div>
+            </div>
+          </header>
+          <section class="project-gallery" aria-labelledby="nyc-taxi-gallery-title">
+            <h3 id="nyc-taxi-gallery-title">Dashboard Screenshots · September 2026</h3>
+            <figure class="project-poster">
+              <a class="project-poster__link" href="assets/projects/nyc-taxi-overview.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Overview screenshot at full size">
+                <img src="assets/projects/nyc-taxi-overview.png" alt="Dashboard overview with trip count, passenger charges, average reported distance, daily trip counts, and top pickup zones." width="1760" height="872" loading="lazy" decoding="async" />
+              </a>
+              <figcaption><strong>Overview</strong><span>Monthly metrics, daily trips, and busiest pickup zones</span></figcaption>
+            </figure>
+            <figure class="project-poster">
+              <a class="project-poster__link" href="assets/projects/nyc-taxi-zone-maps.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Taxi Zone Maps screenshot at full size">
+                <img src="assets/projects/nyc-taxi-zone-maps.png" alt="Side-by-side Manhattan taxi zone maps showing pickups and drop-offs on the same color scale." width="1785" height="996" loading="lazy" decoding="async" />
+              </a>
+              <figcaption><strong>Taxi Zone Maps</strong><span>Manhattan pickups and drop-offs on a shared scale</span></figcaption>
+            </figure>
+            <figure class="project-poster">
+              <a class="project-poster__link" href="assets/projects/nyc-taxi-trip-patterns.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Trip Patterns screenshot at full size">
+                <img src="assets/projects/nyc-taxi-trip-patterns.png" alt="A weekday-by-hour heatmap, hourly trip totals, a trip duration histogram, and a 24-hour trip clock." width="1808" height="968" loading="lazy" decoding="async" />
+              </a>
+              <figcaption><strong>Trip Patterns</strong><span>Trips by weekday and hour, plus trip duration</span></figcaption>
+            </figure>
+            <figure class="project-poster">
+              <a class="project-poster__link" href="assets/projects/nyc-taxi-fares-and-payments.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Fares and Payments screenshot at full size">
+                <img src="assets/projects/nyc-taxi-fares-and-payments.png" alt="Fares and Payments dashboard filtered to credit card trips, with passenger charges, metered fares, tips, tolls, and MTA tax." width="1801" height="1017" loading="lazy" decoding="async" />
+              </a>
+              <figcaption><strong>Fares and Payments</strong><span>Fare and charge breakdowns for credit card trips</span></figcaption>
+            </figure>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Project Overview &amp; Description</h3>
+            <p>NYC publishes millions of yellow taxi records in monthly Parquet files. This project combines those records with official taxi zone names and boundaries, then serves the processed data through a six-page Streamlit dashboard.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Objective</h3>
+            <p>Make published trip data easier to compare across months and quarters while keeping the original source, metric definitions, and excluded records traceable.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Approach</h3>
+            <ul>
+              <li>Load monthly TLC Parquet files and use PySpark to validate timestamps, trip duration, distance, and passenger charges.</li>
+              <li>Store accepted trips, daily pickup totals, and import audit records in PostgreSQL. Rerunning an import replaces that month’s data in one transaction.</li>
+              <li>Build Streamlit views for trip summaries, pickup and drop-off maps, common routes, hourly activity, fares, and comparisons across periods.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Results &amp; Key Findings</h3>
+            <ul>
+              <li>The September 2026 dashboard shows 3,827,820 accepted trips, US$123.25 million in recorded passenger charges, and an average reported distance of 5.00 miles.</li>
+              <li>Upper East Side South led pickup zones in September, and 6 p.m. had the highest trip count when grouped by pickup hour.</li>
+              <li>Validation excluded 48,224 records (1.24%). The dashboard breaks down those exclusions by reason.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Impact &amp; Conclusion</h3>
+            <p>Each month’s figures can be traced back to the source file and its validation results. The dashboard also identifies which months are included in a quarterly comparison so readers can interpret totals from partially loaded quarters.</p>
+          </section>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/nyc-yellow-taxi-analytics" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.2-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
 
     <dialog class="project-dialog" id="project-researchbridge" aria-labelledby="project-researchbridge-title">
       <div class="project-dialog__shell">

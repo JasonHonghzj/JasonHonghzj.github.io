@@ -1465,6 +1465,20 @@ h2 {
 
 .project-poster figcaption strong { color: var(--ink); font-weight: 500; }
 
+.project-gallery {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.project-gallery h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.project-gallery .project-poster { margin: 0; }
+
 /* Accessible, responsive process diagrams use real text rather than text in images. */
 .project-flow {
   margin: 34px 0 24px;
