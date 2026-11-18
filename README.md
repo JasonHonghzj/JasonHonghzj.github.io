@@ -1,44 +1,18 @@
-# Jason Hong — Portfolio
+# Jason Hong - Portfolio
 
-A responsive, single-page data science portfolio built with plain HTML, CSS, and JavaScript. It includes persistent light and dark color modes. No build step is required, so it can be hosted directly with GitHub Pages.
+My portfolio website demonstrates my experience, projects, and contact information
 
-## Preview locally
+# Repo Structure
 
-Open `index.html` directly, or run a small local server:
-
-```powershell
-python -m http.server 8000
+```text
+.
+├── assets/
+│   └── projects/
+├── docs/
+├── .gitignore
+├── .nojekyll
+├── index.html
+├── README.md
+├── script.js
+└── styles.css
 ```
-
-Then visit `http://localhost:8000`.
-
-## Personal photo
-
-The homepage portrait is stored as a square PNG with transparency at `assets/headshot.png`. The circular photo window uses `--portrait-backdrop` for the background in both themes.
-
-## Deploy with GitHub Pages
-
-1. Create a GitHub repository and push this folder to the `main` branch.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select `main`, choose `/ (root)`, then save.
-
-GitHub will publish the site at `https://<username>.github.io/<repository>/`.
-
-## Files
-
-- `index.html` — page content and semantic structure
-- `styles.css` — layout, color system, responsive behavior, and motion
-- `script.js` — mobile menu, active navigation, and scroll reveal effects
-- `assets/resume-zhi-jun-hong.pdf` — downloadable résumé
-- `assets/headshot.png` — homepage portrait
-
-## Stylesheet cache updates
-
-The stylesheet link in `index.html` includes a content version (`styles.css?v=...`). After changing `styles.css`, refresh that version using the first 12 characters of its SHA-256 hash so existing browser sessions request the updated styles:
-
-```powershell
-(Get-FileHash -LiteralPath styles.css -Algorithm SHA256).Hash.ToLowerInvariant().Substring(0, 12)
-```
-
-How I Work SVGs also declare intrinsic width and height so an older or unavailable stylesheet cannot make them expand to the browser's default SVG size.
