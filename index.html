@@ -235,6 +235,17 @@
         </div>
 
         <div class="project-grid" id="project-grid">
+          <article class="project-card project-card--sage reveal" data-project-category="data-analytics">
+            <div class="project-topline"><span>Demand Forecasting &amp; Operations Research</span></div>
+            <img class="project-cover" src="assets/projects/inventory-optimization-cover.webp" alt="AI-generated concept: a barcode scanner and open cartons on a retail stockroom packing table." width="1536" height="1024" loading="lazy" decoding="async" />
+            <div class="project-copy">
+              <h3>Inventory Optimization</h3>
+              <p>A retail planner that forecasts weekly demand for 40 products and recommends what to reorder within a purchase budget and a storage limit.</p>
+              <ul><li>Python</li><li>OR-Tools</li><li>Streamlit</li></ul>
+              <button class="project-link" type="button" data-project-dialog="project-inventory">View Project <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
           <article class="project-card project-card--mist reveal" data-project-category="data-analytics">
             <div class="project-topline"><span>Data Engineering &amp; Urban Mobility</span></div>
             <img class="project-cover" src="assets/projects/nyc-taxi-cover.jpg" alt="A yellow taxi crosses a Manhattan intersection lined with tall buildings." width="4201" height="2790" loading="lazy" decoding="async" />
@@ -465,6 +476,82 @@
         </div>
       </section>
     </main>
+
+    <dialog class="project-dialog" id="project-inventory" aria-labelledby="project-inventory-title">
+      <div class="project-dialog__shell">
+        <button class="project-dialog__close" type="button" aria-label="Close project details" data-close-dialog>Close <span aria-hidden="true">×</span></button>
+        <div class="project-detail">
+          <header class="project-detail__header">
+            <p class="project-detail__eyebrow">Demand Forecasting &amp; Operations Research</p>
+            <h2 id="project-inventory-title">Inventory Optimization</h2>
+            <p class="project-detail__intro">A weekly replenishment planner that turns retail transactions into a purchase plan under budget and warehouse capacity limits.</p>
+            <div class="project-detail__meta">
+              <div><span>Data</span><strong>UCI Online Retail</strong></div>
+              <div><span>Skills</span><strong>Python, Pandas, SQLite, XGBoost, OR-Tools, Streamlit</strong></div>
+            </div>
+          </header>
+          <figure class="project-flow" aria-labelledby="inventory-flow-title">
+            <figcaption class="project-flow__heading" id="inventory-flow-title"><span>Project at a glance</span>From retail transactions to a weekly order plan</figcaption>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M7 18h34M7 29h34M18 7v34M29 7v34"/></svg></div>
+                <h3>Prepare sales data</h3>
+                <ul><li>Clean UK retail invoice lines</li><li>Aggregate sales by product and week</li><li>Select 40 high-volume products</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8v32h32M13 32l8-10 7 4 11-13"/><path d="M33 13h6v6"/></svg></div>
+                <h3>Forecast demand</h3>
+                <ul><li>Compare XGBoost and a moving average</li><li>Select a model on validation weeks</li><li>Report error on held-out weeks</li></ul>
+              </li>
+              <li class="project-flow__step">
+                <div class="project-flow__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="36" rx="4"/><path d="M18 7V4h12v3M16 20l5 5 11-11M17 33h14"/></svg></div>
+                <h3>Optimize reorders</h3>
+                <ul><li>Choose whole units to order</li><li>Enforce purchase and storage limits</li><li>Compare cost and fill rate</li></ul>
+              </li>
+            </ol>
+            <dl class="project-facts">
+              <div><dt>Products modeled</dt><dd>40</dd></div>
+              <div><dt>Weekly purchase budget</dt><dd>£600</dd></div>
+              <div><dt>Storage after delivery</dt><dd>9,500 units</dd></div>
+            </dl>
+            <p class="project-flow__note">The budget and storage capacity are inputs to the default scenario.</p>
+          </figure>
+          <section class="project-detail__panel">
+            <h3>Project Overview &amp; Description</h3>
+            <p>The project uses Daqing Chen’s UCI Online Retail dataset, which contains 541,909 invoice lines. It forecasts weekly demand for 40 products using UK sales and provides a Streamlit app for adjusting budget, storage, starting stock, and demand assumptions and exporting the recommended order as a CSV.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Objective</h3>
+            <p>Decide what to reorder each week while minimizing simulated purchase, holding, and shortage costs. Compare the share of demand filled across ordering strategies.</p>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Approach</h3>
+            <ul>
+              <li>Use Pandas to clean transactions and SQLite to aggregate weekly sales. Select products using training-period sales volume.</li>
+              <li>Compare a four-week moving average with XGBoost using rolling forecasts. Select the model by validation weighted absolute percentage error (WAPE).</li>
+              <li>Use OR-Tools and its SCIP solver to choose whole-unit order quantities. Backtest the plan against highest demand first and no replenishment under the same weekly constraints and starting-stock rule.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Results &amp; Key Findings</h3>
+            <ul>
+              <li>The four-week moving average was selected with 73.7% validation WAPE versus 74.1% for XGBoost. On the held-out weeks, WAPE was 52.5% for the moving average and 50.2% for XGBoost.</li>
+              <li>Over four test weeks, optimized orders had the lowest simulated cost (£84,173.96), saving £305.50 (0.36%) against highest demand first. Highest demand first filled 43.02% of demand versus 42.84% for optimized orders.</li>
+              <li>The default one-week scenario recommends buying 994 units across five products for £599.78, bringing stock after delivery to 9,499 units.</li>
+            </ul>
+          </section>
+          <section class="project-detail__panel">
+            <h3>Impact &amp; Conclusion</h3>
+            <p>The planner shows how much each strategy spends and how much demand it covers. The backtest uses recorded sales as a proxy for demand and resets estimated starting stock each week. The cost comparison depends on the assumed purchasing, holding, and shortage costs.</p>
+          </section>
+          <footer class="project-detail__actions">
+            <a class="project-action project-action--code" href="https://github.com/JasonHonghzj/inventory-optimization" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.8-4.7 5.1.4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg><span>View Code</span><span aria-hidden="true">↗</span></a>
+            <a class="project-action" href="https://github.com/JasonHonghzj/inventory-optimization/blob/main/docs/inventory-optimization-brief.pdf" target="_blank" rel="noopener noreferrer">Project Brief (PDF) <span aria-hidden="true">↗</span></a>
+            <button class="project-action" type="button" data-close-dialog data-back-projects><span aria-hidden="true">←</span> Back to Projects</button>
+          </footer>
+        </div>
+      </div>
+    </dialog>
 
     <dialog class="project-dialog" id="project-nyc-taxi" aria-labelledby="project-nyc-taxi-title">
       <div class="project-dialog__shell">
